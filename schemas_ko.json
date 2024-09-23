@@ -1,0 +1,4993 @@
+[
+    {
+        "IAWD_TB_DCWBWR_WBL_M": {
+            "table_desc": "운송장 기본 정보를 포함하는 테이블",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "운송장 고유번호"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "택배 집화 날짜"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "집화점 소코드"
+                },
+                {
+                    "col": "QTY",
+                    "col_desc": "운송 수량"
+                },
+                {
+                    "col": "FARE_DCD",
+                    "col_desc": "운임 구분 코드[BASIS_LCLSF_CD:CS009] (01:선불,02:착불,03:신용,04:변경안함)"
+                },
+                {
+                    "col": "WBL_DCD",
+                    "col_desc": "운송장 구분 코드[BASIS_LCLSF_CD:WB001] (01:일반송장,02:보조송장,03:연결송장,04:반송송장,05:교환송장,06:회수송장,07:반송 원송장,08:연결 원송장)"
+                },
+                {
+                    "col": "RSVT_DCD",
+                    "col_desc": "예약 구분 코드[BASIS_LCLSF_CD:RV002] (01:일반,02:반품)"
+                },
+                {
+                    "col": "SMRY_CUST_CD",
+                    "col_desc": "집계 고객 코드"
+                },
+                {
+                    "col": "CORP_CUST_CD",
+                    "col_desc": "기업 고객 코드"
+                },
+                {
+                    "col": "SEND_CUST_CD",
+                    "col_desc": "발송 고객 코드"
+                },
+                {
+                    "col": "ADJPL_DCD",
+                    "col_desc": "정산처 구분 코드[BASIS_LCLSF_CD:RV004] (1:주관고객,2:발송고객,3:보내는분,4:받는분)"
+                },
+                {
+                    "col": "CUST_ORD_NO",
+                    "col_desc": "고객 주문 번호"
+                },
+                {
+                    "col": "ADJPL_CUST_CD",
+                    "col_desc": "정산처 고객 코드"
+                },
+                {
+                    "col": "BSC_FARE",
+                    "col_desc": "기본 운임 금액"
+                },
+                {
+                    "col": "ETC_FARE",
+                    "col_desc": "기타 운임 금액"
+                },
+                {
+                    "col": "TOT_FARE",
+                    "col_desc": "총 운임 금액"
+                },
+                {
+                    "col": "ADTNL_SVC_CD",
+                    "col_desc": "부가 서비스 코드"
+                },
+                {
+                    "col": "ADTNL_SVC_YN",
+                    "col_desc": "부가 서비스 여부"
+                },
+                {
+                    "col": "ITML_CLSF_CD",
+                    "col_desc": "품목 분류 코드"
+                },
+                {
+                    "col": "CMDTS_PR_AMT",
+                    "col_desc": "물품 가액 금액"
+                },
+                {
+                    "col": "CNTR_ITML_CD",
+                    "col_desc": "계약 품목 코드"
+                },
+                {
+                    "col": "VAT_INCD_YN",
+                    "col_desc": "부가세 포함 여부"
+                },
+                {
+                    "col": "ITML_NM",
+                    "col_desc": "품목 명칭"
+                },
+                {
+                    "col": "DLVS_GOODS_CD",
+                    "col_desc": "택배 상품 코드"
+                },
+                {
+                    "col": "BOX_TYP_CD",
+                    "col_desc": "박스 유형 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "자료 구분 코드[BASIS_LCLSF_CD:CS030](24:일반배송(소)-회수,15:일반배송(중)-출하,10:일반,22:직택배 회수,13:직송 출고,17:직송위탁,14:일반배송(소)-출하,11:센터 출고,51:NOC서비스,12:직택배 출고,25:일반배송(중)-회수,23:직회수,21:센터 회수,01:일반_사용안함,32:휴일배송,16:일반배송(대)-출하,26:일반배송(대)-회수,31:당일배송)"
+                },
+                {
+                    "col": "PAYN_CNFM_YN",
+                    "col_desc": "입금 확인 여부"
+                },
+                {
+                    "col": "MOD_PSBL_YN",
+                    "col_desc": "수정 가능 여부"
+                },
+                {
+                    "col": "RTNI_YN",
+                    "col_desc": "반송 여부"
+                },
+                {
+                    "col": "SAL_MNG_NO",
+                    "col_desc": "매출 관리 번호"
+                },
+                {
+                    "col": "SLIP_NO",
+                    "col_desc": "전표 번호"
+                },
+                {
+                    "col": "INPT_BRAN_CD",
+                    "col_desc": "입력 점소 코드"
+                },
+                {
+                    "col": "INPT_EMPNO",
+                    "col_desc": "입력 사원 번호"
+                },
+                {
+                    "col": "INPT_DT",
+                    "col_desc": "입력 일자"
+                },
+                {
+                    "col": "INPT_HMS",
+                    "col_desc": "입력 시분초"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터 등록 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터 등록자 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터 수정 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터 수정자 ID"
+                },
+                {
+                    "col": "CUST_MNG_PRNCTN_CD",
+                    "col_desc": "고객 관리 거래처 코드"
+                },
+                {
+                    "col": "HGPRC_CRG_YN",
+                    "col_desc": "고가 화물 여부"
+                },
+                {
+                    "col": "SMS_FBID_YN",
+                    "col_desc": "SMS 금지 여부"
+                },
+                {
+                    "col": "WGHT",
+                    "col_desc": "화물 무게"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 수행 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCCRST_ITSCBM_P": {
+            "table_desc": "ITS 운송장 체적 내역 정보를 포함하는 테이블로, 운송장 번호, 스캔 정보, ITS 크기 정보 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "운송장의 고유번호"
+                },
+                {
+                    "col": "SENU",
+                    "col_desc": "순번"
+                },
+                {
+                    "col": "SCAN_WORK_DCD",
+                    "col_desc": "스캔 작업의 구분 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소의 코드"
+                },
+                {
+                    "col": "SCAN_DT",
+                    "col_desc": "스캔이 이루어진 날짜"
+                },
+                {
+                    "col": "SCAN_HMS",
+                    "col_desc": "스캔이 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "EMPNO",
+                    "col_desc": "스캔을 수행한 사원의 번호"
+                },
+                {
+                    "col": "RTLN_NO",
+                    "col_desc": "운송 노선의 번호"
+                },
+                {
+                    "col": "ITS_SRL_NO",
+                    "col_desc": "ITS 장비의 시리얼 번호"
+                },
+                {
+                    "col": "TRNSP_MNG_NO",
+                    "col_desc": "운송 관리를 위한 번호"
+                },
+                {
+                    "col": "ITS_HRZN_LEN",
+                    "col_desc": "ITS로 측정한 운송장의 가로 길이"
+                },
+                {
+                    "col": "ITS_VERT_LEN",
+                    "col_desc": "ITS로 측정한 운송장의 세로 길이"
+                },
+                {
+                    "col": "ITS_HIGT_LEN",
+                    "col_desc": "ITS로 측정한 운송장의 높이 길이"
+                },
+                {
+                    "col": "ITS_FILE_PATHNM",
+                    "col_desc": "ITS 파일의 경로명"
+                },
+                {
+                    "col": "ITS_FILE_NM",
+                    "col_desc": "ITS 파일의 이름"
+                },
+                {
+                    "col": "ITS_FILE_SIZE",
+                    "col_desc": "ITS 파일의 크기"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 일시"
+                },
+                {
+                    "col": "PROC_YN",
+                    "col_desc": "데이터 처리 여부"
+                },
+                {
+                    "col": "PROC_DTM",
+                    "col_desc": "데이터가 처리된 일시"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 작업이 수행된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCWBWS_WBLPRGS_R": {
+            "table_desc": "운송장의 진행 현황에 대한 정보를 포함하며, 집화 및 배송 여부, 인수자 정보, 이미지 등록 여부 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "집화점의 소단위 코드"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "택배가 집화된 날짜"
+                },
+                {
+                    "col": "DLV_BRAN_CD",
+                    "col_desc": "배송점의 소단위 코드"
+                },
+                {
+                    "col": "DLV_DT",
+                    "col_desc": "택배가 배송된 날짜"
+                },
+                {
+                    "col": "DLV_DAYS",
+                    "col_desc": "집화일자부터 배송일자까지의 일수"
+                },
+                {
+                    "col": "WBL_COC_DT",
+                    "col_desc": "운송장이 집화된 날짜"
+                },
+                {
+                    "col": "CNTR_BRAN_CD",
+                    "col_desc": "계약된 점소의 코드"
+                },
+                {
+                    "col": "CORP_CUST_CD",
+                    "col_desc": "기업 고객의 고유 코드"
+                },
+                {
+                    "col": "ACPR_NM",
+                    "col_desc": "택배를 인수한 사람의 이름"
+                },
+                {
+                    "col": "TKOVR_DT",
+                    "col_desc": "택배가 인수된 날짜"
+                },
+                {
+                    "col": "ACPR_RLP_DCD",
+                    "col_desc": "인수자와 수신인과의 관계를 구분하는 코드"
+                },
+                {
+                    "col": "WBL_REGS_YN",
+                    "col_desc": "운송장이 등록되었는지 여부"
+                },
+                {
+                    "col": "COC_YN",
+                    "col_desc": "택배가 집화되었는지 여부"
+                },
+                {
+                    "col": "COC_EMPNO",
+                    "col_desc": "집화를 담당한 사원의 번호"
+                },
+                {
+                    "col": "DLV_YN",
+                    "col_desc": "택배가 배송되었는지 여부"
+                },
+                {
+                    "col": "DLV_EMPNO",
+                    "col_desc": "배송을 담당한 사원의 번호"
+                },
+                {
+                    "col": "CUST_CMPL_YN",
+                    "col_desc": "고객으로부터 불만이 접수되었는지 여부"
+                },
+                {
+                    "col": "ACDT_REGS_YN",
+                    "col_desc": "사고가 등록되었는지 여부"
+                },
+                {
+                    "col": "ACPR_REGS_YN",
+                    "col_desc": "인수자 정보가 등록되었는지 여부"
+                },
+                {
+                    "col": "IMG_WBL_REGS_YN",
+                    "col_desc": "운송장 이미지가 등록되었는지 여부"
+                },
+                {
+                    "col": "DLV_IMG_REGS_YN",
+                    "col_desc": "배송 이미지가 등록되었는지 여부"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCWBWR_WBLCUINF_D": {
+            "table_desc": "각 운송장에 대한 송화인과 수화인의 상세 정보를 포함하며, 고객 코드, 주소, 전화번호 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "SNDR_CUST_CD",
+                    "col_desc": "송화인의 고유 고객 코드"
+                },
+                {
+                    "col": "SNDR_ZIP",
+                    "col_desc": "송화인의 우편번호"
+                },
+                {
+                    "col": "SNDR_ZIP_SN",
+                    "col_desc": "송화인의 우편번호 일련번호"
+                },
+                {
+                    "col": "SNDR_NM",
+                    "col_desc": "송화인의 이름"
+                },
+                {
+                    "col": "SNDR_LAREA_TELNO",
+                    "col_desc": "송화인의 지역 전화번호"
+                },
+                {
+                    "col": "SNDR_TONO_TELNO",
+                    "col_desc": "송화인의 국번 전화번호"
+                },
+                {
+                    "col": "SNDR_INDV_TELNO",
+                    "col_desc": "송화인의 개별 전화번호"
+                },
+                {
+                    "col": "SNDR_FS1_CLPHNO",
+                    "col_desc": "송화인의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_SC2_CLPHNO",
+                    "col_desc": "송화인의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_TH3_CLPHNO",
+                    "col_desc": "송화인의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_BSC_ADDR",
+                    "col_desc": "송화인의 기본 주소"
+                },
+                {
+                    "col": "SNDR_DTL_ADDR",
+                    "col_desc": "송화인의 상세 주소"
+                },
+                {
+                    "col": "RCVR_CUST_CD",
+                    "col_desc": "수화인의 고유 고객 코드"
+                },
+                {
+                    "col": "RCVR_ZIP",
+                    "col_desc": "수화인의 우편번호"
+                },
+                {
+                    "col": "RCVR_ZIP_SN",
+                    "col_desc": "수화인의 우편번호 일련번호"
+                },
+                {
+                    "col": "RCVR_NM",
+                    "col_desc": "수화인의 이름"
+                },
+                {
+                    "col": "RCVR_LAREA_TELNO",
+                    "col_desc": "수화인의 지역 전화번호"
+                },
+                {
+                    "col": "RCVR_TONO_TELNO",
+                    "col_desc": "수화인의 국번 전화번호"
+                },
+                {
+                    "col": "RCVR_INDV_TELNO",
+                    "col_desc": "수화인의 개별 전화번호"
+                },
+                {
+                    "col": "RCVR_FS1_CLPHNO",
+                    "col_desc": "수화인의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_SC2_CLPHNO",
+                    "col_desc": "수화인의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_TH3_CLPHNO",
+                    "col_desc": "수화인의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_BSC_ADDR",
+                    "col_desc": "수화인의 기본 주소"
+                },
+                {
+                    "col": "RCVR_DTL_ADDR",
+                    "col_desc": "수화인의 상세 주소"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "택배가 집화된 날짜"
+                },
+                {
+                    "col": "DLV_DT",
+                    "col_desc": "택배가 배송된 날짜"
+                },
+                {
+                    "col": "CORP_CUST_CD",
+                    "col_desc": "기업 고객의 고유 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCBSCD_BASISSC_D": {
+            "table_desc": "기초 소분류 코드에 대한 상세 정보를 포함하며, 기초 대분류 코드, 기초 소분류 코드, 기초 소분류 코드명, 기초값 내용 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "BASIS_LCLSF_CD",
+                    "col_desc": "기초 대분류 코드"
+                },
+                {
+                    "col": "BASIS_SCLSF_CD",
+                    "col_desc": "기초 소분류 코드"
+                },
+                {
+                    "col": "BASIS_SCLSF_CD_NM",
+                    "col_desc": "기초 소분류 코드명"
+                },
+                {
+                    "col": "BASIS_VAL_CNTN1",
+                    "col_desc": "기초값에 대한 내용 1"
+                },
+                {
+                    "col": "BASIS_VAL_CNTN2",
+                    "col_desc": "기초값에 대한 내용 2"
+                },
+                {
+                    "col": "SORT_ODR_NO",
+                    "col_desc": "정렬 순서 번호"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "코드 사용 여부"
+                },
+                {
+                    "col": "RMK_CNTN",
+                    "col_desc": "비고 내용"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "레코드 등록 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "레코드 등록자 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "레코드 수정 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "레코드 수정자 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 수행 일시"
+                },
+                {
+                    "col": "BASIS_VAL_CNTN3",
+                    "col_desc": "기초값에 대한 내용 3"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCWBWP_WBLLASTS_R": {
+            "table_desc": "운송장의 최종 상태 정보를 포함하는 테이블로, 운송장번호, 스캔구분코드, 스캔일자, 스캔시분초, 점소코드, 작업자ID, 상대점소코드, 운송관리번호, 도급관리번호, 스캔부가내용, 노선번호, 차량번호, 스캔사유코드, 상품코드, 도착구분코드, 잔류여부, 사용여부, 장비구분코드, 장비일련번호, 프로그램ID, 목적지코드, 등록점소코드, 등록자ID, 등록일시, 수정자ID, 수정일시, 집화일자, 집화점소코드, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "운송장의 고유번호"
+                },
+                {
+                    "col": "SCAN_DCD",
+                    "col_desc": "스캔 유형을 구분하는 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "SCAN_DT",
+                    "col_desc": "스캔이 이루어진 날짜"
+                },
+                {
+                    "col": "SCAN_HMS",
+                    "col_desc": "스캔이 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "스캔이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "WKR_ID",
+                    "col_desc": "스캔을 수행한 작업자의 ID"
+                },
+                {
+                    "col": "PATN_BRAN_CD",
+                    "col_desc": "상대 점소의 코드"
+                },
+                {
+                    "col": "TRNSP_MNG_NO",
+                    "col_desc": "운송 관리를 위한 고유번호"
+                },
+                {
+                    "col": "SCNTR_MNG_NO",
+                    "col_desc": "도급 관리를 위한 고유번호"
+                },
+                {
+                    "col": "SCAN_ADTNL_CNTN",
+                    "col_desc": "스캔 시 추가로 기록된 내용"
+                },
+                {
+                    "col": "RTLN_NO",
+                    "col_desc": "운송 노선의 고유번호"
+                },
+                {
+                    "col": "VECL_NO",
+                    "col_desc": "운송에 사용된 차량의 번호"
+                },
+                {
+                    "col": "SCAN_RSCD",
+                    "col_desc": "스캔 사유를 나타내는 코드"
+                },
+                {
+                    "col": "GOODS_CD",
+                    "col_desc": "운송된 상품의 코드"
+                },
+                {
+                    "col": "ARV_DCD",
+                    "col_desc": "도착 유형을 구분하는 코드"
+                },
+                {
+                    "col": "RMN_YN",
+                    "col_desc": "운송장이 잔류 상태인지 여부"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "운송장이 사용 중인지 여부"
+                },
+                {
+                    "col": "EQUP_DCD",
+                    "col_desc": "스캔에 사용된 장비 유형을 구분하는 코드"
+                },
+                {
+                    "col": "EQUP_SN",
+                    "col_desc": "스캔에 사용된 장비의 일련번호"
+                },
+                {
+                    "col": "PGM_ID",
+                    "col_desc": "스캔과 관련된 프로그램의 ID"
+                },
+                {
+                    "col": "DEST_CD",
+                    "col_desc": "운송 목적지를 나타내는 코드"
+                },
+                {
+                    "col": "REGS_BRAN_CD",
+                    "col_desc": "데이터를 등록한 점소의 코드"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "운송장이 집화된 날짜"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "운송장이 집화된 점소의 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAMD_TB_BRAN_M": {
+            "table_desc": "점소에 대한 기본 정보를 포함하며, 점소코드, 점소명, 주소, 전화번호, 영업개시일자 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소의 고유 코드"
+                },
+                {
+                    "col": "BRAN_NM",
+                    "col_desc": "점소의 이름"
+                },
+                {
+                    "col": "BRAN_ABR_NM",
+                    "col_desc": "점소의 약칭 이름"
+                },
+                {
+                    "col": "OP_UP_BRAN_CD",
+                    "col_desc": "운영 상위 점소의 코드"
+                },
+                {
+                    "col": "MNG_UP_BRAN_CD",
+                    "col_desc": "관리 상위 점소의 코드"
+                },
+                {
+                    "col": "BRAN_OP_NO",
+                    "col_desc": "점소 운영을 위한 번호"
+                },
+                {
+                    "col": "BRAN_MNG_NO",
+                    "col_desc": "점소 관리를 위한 번호"
+                },
+                {
+                    "col": "BIZNO",
+                    "col_desc": "점소의 사업자등록번호"
+                },
+                {
+                    "col": "REPR_NM",
+                    "col_desc": "점소 대표자의 이름"
+                },
+                {
+                    "col": "ZIP",
+                    "col_desc": "점소의 우편번호"
+                },
+                {
+                    "col": "ADDR",
+                    "col_desc": "점소의 주소"
+                },
+                {
+                    "col": "DTL_ADDR",
+                    "col_desc": "점소의 상세 주소"
+                },
+                {
+                    "col": "BRAN_ZIP",
+                    "col_desc": "점소의 우편번호"
+                },
+                {
+                    "col": "BRAN_ADDR",
+                    "col_desc": "점소의 주소"
+                },
+                {
+                    "col": "BRAN_DTL_ADDR",
+                    "col_desc": "점소의 상세 주소"
+                },
+                {
+                    "col": "LAREA_TEL_NO",
+                    "col_desc": "점소의 지역 전화번호"
+                },
+                {
+                    "col": "TONO_TEL_NO",
+                    "col_desc": "점소의 국번 전화번호"
+                },
+                {
+                    "col": "INDV_TELNO",
+                    "col_desc": "점소의 개별 전화번호"
+                },
+                {
+                    "col": "LAREA_FAX_NO",
+                    "col_desc": "점소의 지역 팩스번호"
+                },
+                {
+                    "col": "TONO_FAX_NO",
+                    "col_desc": "점소의 국번 팩스번호"
+                },
+                {
+                    "col": "INDV_FAX_NO",
+                    "col_desc": "점소의 개별 팩스번호"
+                },
+                {
+                    "col": "REPR_FS1_CLPHNO",
+                    "col_desc": "점소 대표자의 첫 번째 휴대폰번호"
+                },
+                {
+                    "col": "REPR_SC2_CLPHNO",
+                    "col_desc": "점소 대표자의 두 번째 휴대폰번호"
+                },
+                {
+                    "col": "REPR_TH3_CLPHNO",
+                    "col_desc": "점소 대표자의 세 번째 휴대폰번호"
+                },
+                {
+                    "col": "SLS_OPN_DT",
+                    "col_desc": "점소의 영업 개시일자"
+                },
+                {
+                    "col": "SLS_EDDT",
+                    "col_desc": "점소의 영업 종료일자"
+                },
+                {
+                    "col": "GTHDLV_UABL_STDT",
+                    "col_desc": "점소에서 집배가 불가능한 시작일자"
+                },
+                {
+                    "col": "GTHDLV_UABL_EDDT",
+                    "col_desc": "점소에서 집배가 불가능한 종료일자"
+                },
+                {
+                    "col": "ARTR_INITA_VAL",
+                    "col_desc": "간선 이니셜 값"
+                },
+                {
+                    "col": "SLS_IMIW_EMPNO",
+                    "col_desc": "영업 관장 사원의 번호"
+                },
+                {
+                    "col": "REP_SM_EMPNO",
+                    "col_desc": "대표 SM 사원의 번호"
+                },
+                {
+                    "col": "BRAN_DCD",
+                    "col_desc": "점소를 구분하는 코드"
+                },
+                {
+                    "col": "OWN_DCD",
+                    "col_desc": "점소 소유를 구분하는 코드"
+                },
+                {
+                    "col": "CONSGN_DCD",
+                    "col_desc": "점소 위탁을 구분하는 코드"
+                },
+                {
+                    "col": "COMP_DCD",
+                    "col_desc": "회사를 구분하는 코드"
+                },
+                {
+                    "col": "BIZCND_NM",
+                    "col_desc": "점소의 업태명"
+                },
+                {
+                    "col": "ITEM_NM",
+                    "col_desc": "점소의 종목명"
+                },
+                {
+                    "col": "BRAN_JOB_DCD",
+                    "col_desc": "점소 업무를 구분하는 코드"
+                },
+                {
+                    "col": "TRNL_DCD",
+                    "col_desc": "터미널을 구분하는 코드"
+                },
+                {
+                    "col": "BRAN_SCD",
+                    "col_desc": "점소의 상태를 나타내는 코드"
+                },
+                {
+                    "col": "BMM_BLC_AMT",
+                    "col_desc": "전월의 잔고 금액"
+                },
+                {
+                    "col": "OLBRAN_CD",
+                    "col_desc": "이전 점소의 코드"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "점소의 사용 여부"
+                },
+                {
+                    "col": "COSTC_CD",
+                    "col_desc": "코스트센터의 코드"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 일시"
+                },
+                {
+                    "col": "TEAM_ODR_NO",
+                    "col_desc": "팀의 순서 번호"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 작업이 수행된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCBSBR_BRAN_M": {
+            "table_desc": "주로 점소에 대한 상위 점소 파악시에 자주 사용되는 테이블이며, 각 점소에 대한 기본 정보를 포함하며, 점소 코드, 점소 명, 점소 약어명, 운영 상위 점소 코드, 관리 상위 점소 코드 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소의 고유 식별 코드"
+                },
+                {
+                    "col": "BRAN_NM",
+                    "col_desc": "점소의 공식 명칭"
+                },
+                {
+                    "col": "BRAN_ABBRNM",
+                    "col_desc": "점소의 약어 명칭"
+                },
+                {
+                    "col": "OP_UP_BRAN_CD",
+                    "col_desc": "해당 점소의 운영을 총괄하는 상위 점소 코드"
+                },
+                {
+                    "col": "MNG_UP_BRAN_CD",
+                    "col_desc": "해당 점소의 관리를 총괄하는 상위 점소 코드"
+                },
+                {
+                    "col": "BRAN_OP_NO",
+                    "col_desc": "점소의 운영에 관한 고유 번호"
+                },
+                {
+                    "col": "BRAN_MNG_NO",
+                    "col_desc": "점소의 관리에 관한 고유 번호"
+                },
+                {
+                    "col": "BIZNO",
+                    "col_desc": "점소의 사업자 등록 번호"
+                },
+                {
+                    "col": "REPR_NM",
+                    "col_desc": "점소를 대표하는 사람의 이름"
+                },
+                {
+                    "col": "BIZR_ZIP",
+                    "col_desc": "점소 사업장의 우편번호"
+                },
+                {
+                    "col": "BIZR_BSC_ADDR",
+                    "col_desc": "점소 사업장의 기본 주소"
+                },
+                {
+                    "col": "BIZR_DTL_ADDR",
+                    "col_desc": "점소 사업장의 상세 주소"
+                },
+                {
+                    "col": "BRAN_ZIP",
+                    "col_desc": "점소 위치의 우편번호"
+                },
+                {
+                    "col": "BRAN_BSC_ADDR",
+                    "col_desc": "점소의 기본 주소"
+                },
+                {
+                    "col": "BRAN_DTL_ADDR",
+                    "col_desc": "점소의 상세 주소"
+                },
+                {
+                    "col": "BRAN_LTELNO",
+                    "col_desc": "점소의 지역 전화번호"
+                },
+                {
+                    "col": "BRAN_OTELNO",
+                    "col_desc": "점소의 국번 전화번호"
+                },
+                {
+                    "col": "BRAN_ITELNO",
+                    "col_desc": "점소의 개별 전화번호"
+                },
+                {
+                    "col": "BRAN_LAREA_FAX_NO",
+                    "col_desc": "점소의 지역 팩스 번호"
+                },
+                {
+                    "col": "BRAN_TONO_FAX_NO",
+                    "col_desc": "점소의 국번 팩스 번호"
+                },
+                {
+                    "col": "BRAN_INDV_FAX_NO",
+                    "col_desc": "점소의 개별 팩스 번호"
+                },
+                {
+                    "col": "REPR_FS1_CLPHNO",
+                    "col_desc": "점소 대표자의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "REPR_SC2_CLPHNO",
+                    "col_desc": "점소 대표자의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "REPR_TH3_CLPHNO",
+                    "col_desc": "점소 대표자의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SLS_OPN_DT",
+                    "col_desc": "점소의 영업 시작 일자"
+                },
+                {
+                    "col": "SLS_EDDT",
+                    "col_desc": "점소의 영업 종료 일자"
+                },
+                {
+                    "col": "GTHDLV_UABL_STDT",
+                    "col_desc": "점소에서 배송 불가능한 기간의 시작 일자"
+                },
+                {
+                    "col": "GTHDLV_UABL_EDDT",
+                    "col_desc": "점소에서 배송 불가능한 기간의 종료 일자"
+                },
+                {
+                    "col": "ARTR_INITA_VAL",
+                    "col_desc": "점소 간선 작업의 초기 설정값"
+                },
+                {
+                    "col": "SLS_IMIW_EMPNO",
+                    "col_desc": "점소 영업을 담당하는 관리자의 사원 번호"
+                },
+                {
+                    "col": "REP_SM_EMPNO",
+                    "col_desc": "점소에서 SM 업무를 담당하는 대표 사원의 번호"
+                },
+                {
+                    "col": "RMK_CNTN",
+                    "col_desc": "점소에 대한 추가적인 비고 사항"
+                },
+                {
+                    "col": "BRAN_DCD",
+                    "col_desc": "점소의 구분을 나타내는 코드"
+                },
+                {
+                    "col": "OWN_DCD",
+                    "col_desc": "점소의 소유 구분을 나타내는 코드"
+                },
+                {
+                    "col": "CONSGN_DCD",
+                    "col_desc": "점소의 위탁 여부를 나타내는 코드"
+                },
+                {
+                    "col": "COMP_DCD",
+                    "col_desc": "점소가 속한 회사의 구분 코드"
+                },
+                {
+                    "col": "BIZCND_NM",
+                    "col_desc": "점소의 업태를 설명하는 명칭"
+                },
+                {
+                    "col": "ITEM_NM",
+                    "col_desc": "점소에서 취급하는 주요 업종 항목"
+                },
+                {
+                    "col": "BRAN_JOB_DCD",
+                    "col_desc": "점소의 업무 유형을 구분하는 코드"
+                },
+                {
+                    "col": "TRNL_DCD",
+                    "col_desc": "점소가 터미널에 해당되는지 여부를 구분하는 코드"
+                },
+                {
+                    "col": "BRAN_SCD",
+                    "col_desc": "점소의 현재 상태를 나타내는 코드"
+                },
+                {
+                    "col": "BMM_BLC_AMT",
+                    "col_desc": "점소의 전월 마감 시점의 잔고 금액"
+                },
+                {
+                    "col": "OLBRAN_CD",
+                    "col_desc": "기존에 사용되던 점소의 코드"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "점소가 현재 활성화 상태인지 여부"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "점소 정보가 시스템에 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "점소 정보를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "점소 정보가 마지막으로 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "점소 정보를 마지막으로 수정한 사용자의 ID"
+                },
+                {
+                    "col": "VECL_RAGE_DCD",
+                    "col_desc": "점소에 배정된 차량의 권역 구분 코드"
+                },
+                {
+                    "col": "EFFI_CMSN_TPCD",
+                    "col_desc": "점소 직원들에게 지급되는 능률 수당의 유형 코드"
+                },
+                {
+                    "col": "COC_CLS_HM",
+                    "col_desc": "점소에서 집화 작업이 마감되는 시간"
+                },
+                {
+                    "col": "LAT_VAL",
+                    "col_desc": "점소 위치의 위도"
+                },
+                {
+                    "col": "LON_VAL",
+                    "col_desc": "점소 위치의 경도"
+                },
+                {
+                    "col": "XAXS_CRTSN_VAL",
+                    "col_desc": "점소 위치의 X축 카티션 좌표 값"
+                },
+                {
+                    "col": "YAXS_CRTSN_VAL",
+                    "col_desc": "점소 위치의 Y축 카티션 좌표 값"
+                },
+                {
+                    "col": "MDM_PRNCTN_CD",
+                    "col_desc": "점소를 식별하는 MDM 거래처 코드"
+                },
+                {
+                    "col": "COSTC_CD",
+                    "col_desc": "점소의 비용을 관리하는 코스트 센터 코드"
+                },
+                {
+                    "col": "BRAN_FMCD",
+                    "col_desc": "점소의 형태를 구분하는 코드"
+                },
+                {
+                    "col": "ORG_UP_BRAN_CD",
+                    "col_desc": "점소가 속한 조직의 상위 점소 코드"
+                },
+                {
+                    "col": "BRAN_ORG_NO",
+                    "col_desc": "점소의 조직 내 번호"
+                },
+                {
+                    "col": "CNTR_EXPR_RMK_CNTN",
+                    "col_desc": "점소와의 계약 만료 관련 비고"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "점소 데이터의 ETL 처리 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWB_TB_DCTRTR_TR_M": {
+            "table_desc": "각 상품의 추적 정보를 포함하는 테이블로, 운송장 번호, 점소 코드, 작업 일자, 작업 시분초, 화뜰 상태 구분 코드 등을 포함하며 상품의 위치와 상태, 처리 세부사항 등을 기록한다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "각 상품의 운송장 번호"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "상품이 처리된 점소의 코드"
+                },
+                {
+                    "col": "WORK_DT",
+                    "col_desc": "상품 처리 작업이 이루어진 날짜"
+                },
+                {
+                    "col": "WORK_HMS",
+                    "col_desc": "상품 처리 작업이 이루어진 정확한 시간"
+                },
+                {
+                    "col": "CRG_ST_DCD",
+                    "col_desc": "화물의 현재 상태를 나타내는 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "PATN_BRAN_CD",
+                    "col_desc": "상품 이동에 연관된 다른 점소의 코드"
+                },
+                {
+                    "col": "EMPNO",
+                    "col_desc": "상품 처리 작업을 담당한 사원의 번호"
+                },
+                {
+                    "col": "LCLSF_RSCD",
+                    "col_desc": "작업의 대분류 사유를 나타내는 코드"
+                },
+                {
+                    "col": "SCLSF_RSCD",
+                    "col_desc": "작업의 소분류 사유를 나타내는 코드"
+                },
+                {
+                    "col": "RTLN_NO",
+                    "col_desc": "상품 이동에 사용된 노선 번호"
+                },
+                {
+                    "col": "VECL_NO",
+                    "col_desc": "상품 이동에 사용된 차량의 번호"
+                },
+                {
+                    "col": "SCAN_ADTNL_CNTN",
+                    "col_desc": "상품 스캔 시 추가적으로 기록되는 내용"
+                },
+                {
+                    "col": "TNS_YN",
+                    "col_desc": "정보가 시스템으로 전송되었는지의 여부"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "정보가 시스템에 처음 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "정보를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "정보가 마지막으로 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "정보를 마지막으로 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터 추출, 변환, 로딩 작업이 수행된 시점"
+                }
+            ]
+        }
+    },
+    {
+        "IAML_TB_RSVTDIV_M": {
+            "table_desc": "예약구분에 대한 기본 정보를 포함하며, 예약구분코드, 예약구분명, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "RSVT_DCD",
+                    "col_desc": "예약구분의 고유 코드"
+                },
+                {
+                    "col": "RSVT_DV_NM",
+                    "col_desc": "예약구분의 명칭"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL된 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAMF_TB_COCBRANBYORGSALES_P": {
+            "table_desc": "이 테이블은 집화점소 및 조직별 영업 매출 내역을 포함합니다. 집화일자, 점소코드, 집화점소코드, 고객 정보, 거래 세부사항, 수량, 운임 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "COC_DT",
+                    "col_desc": "택배가 집화된 날짜"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소의 고유 코드"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "집화점소의 고유 코드"
+                },
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "데이터 유형을 나타내는 코드 [IAML_TB_DATDIV_M] (05:신사업,01:B고객,07:기타매출,03:C고객,02:홈쇼핑,-:해당정보없음,06:미등록,04:우편,08:우편)"
+                },
+                {
+                    "col": "CUST_CLSF_CD",
+                    "col_desc": "고객 유형을 나타내는 코드"
+                },
+                {
+                    "col": "DEAL_DTL_DCD",
+                    "col_desc": "거래 유형을 나타내는 상세 코드[IAML_TB_BIDEALDIV_D](91:이형고객,41:C2C(취급점),13:홈쇼핑(센터),15:우편(등기),16:우편(비등기),31:C2C,11:B2C,-:해당정보없음,33:기숙사,51:콘솔상품,61:특산물,18:신사업(전담배송),34:편의점,32:제휴,21:B2B,12:홈쇼핑(직택배),14:홈쇼핑(직송),81:기타,17:신사업(설치))"
+                },
+                {
+                    "col": "CUST_CD",
+                    "col_desc": "고객의 고유 코드"
+                },
+                {
+                    "col": "SEND_CUST_CD",
+                    "col_desc": "발송 고객의 고유 코드"
+                },
+                {
+                    "col": "BIZCST_NM",
+                    "col_desc": "기업 고객의 이름"
+                },
+                {
+                    "col": "SEND_CUST_NM",
+                    "col_desc": "발송 고객의 이름"
+                },
+                {
+                    "col": "SAP_CUST_CD",
+                    "col_desc": "SAP 시스템에서 사용되는 고객 코드"
+                },
+                {
+                    "col": "SAP_SEND_CUST_CD",
+                    "col_desc": "SAP 시스템에서 사용되는 발송 고객 코드"
+                },
+                {
+                    "col": "COC_EMPNO",
+                    "col_desc": "집화를 담당한 사원의 고유 번호"
+                },
+                {
+                    "col": "FARE_DCD",
+                    "col_desc": "운임 유형을 나타내는 코드[BASIS_LCLSF_CD:CS009] (01:선불,02:착불,03:신용,04:변경안함)"
+                },
+                {
+                    "col": "BOX_TYP_CD",
+                    "col_desc": "박스 유형 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "RSVT_DCD",
+                    "col_desc": "예약 유형을 나타내는 코드[BASIS_LCLSF_CD:RV002] (01:일반,02:반품)"
+                },
+                {
+                    "col": "BIZNO",
+                    "col_desc": "고객의 사업자등록번호"
+                },
+                {
+                    "col": "DEAL_STDT",
+                    "col_desc": "거래가 시작된 날짜"
+                },
+                {
+                    "col": "DEAL_EDDT",
+                    "col_desc": "거래가 종료된 날짜"
+                },
+                {
+                    "col": "SAL_TRCL_YN",
+                    "col_desc": "매출 이관 여부를 나타내는 플래그"
+                },
+                {
+                    "col": "ADPT_QTY",
+                    "col_desc": "선불로 처리된 수량"
+                },
+                {
+                    "col": "ADPT_FARE",
+                    "col_desc": "선불로 지불된 운임 금액"
+                },
+                {
+                    "col": "CODP_QTY",
+                    "col_desc": "착불로 처리된 수량"
+                },
+                {
+                    "col": "CODP_FARE",
+                    "col_desc": "착불로 지불된 운임 금액"
+                },
+                {
+                    "col": "CRDT_QTY",
+                    "col_desc": "신용으로 처리된 수량"
+                },
+                {
+                    "col": "CRDT_FARE",
+                    "col_desc": "신용으로 지불된 운임 금액"
+                },
+                {
+                    "col": "VAT_EXCL_ADPT_AMT",
+                    "col_desc": "부가세를 제외한 선불 금액"
+                },
+                {
+                    "col": "VAT_EXCL_CODP_AMT",
+                    "col_desc": "부가세를 제외한 착불 금액"
+                },
+                {
+                    "col": "VAT_EXCL_CRDT_AMT",
+                    "col_desc": "부가세를 제외한 신용 금액"
+                },
+                {
+                    "col": "ADPT_PREARR_QTY",
+                    "col_desc": "선불로 처리될 예정 수량"
+                },
+                {
+                    "col": "ADPT_PREARR_FARE",
+                    "col_desc": "선불로 지불될 예정 운임 금액"
+                },
+                {
+                    "col": "VAT_EXCL_ADPT_EXPT_AMT",
+                    "col_desc": "부가세를 제외한 선불 예상 금액"
+                },
+                {
+                    "col": "MM_EXPT_COC_QTY",
+                    "col_desc": "한 달 동안 예상되는 집화 수량"
+                },
+                {
+                    "col": "MM_EXPT_SAL_AMT",
+                    "col_desc": "한 달 동안 예상되는 매출 금액"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAMD_TB_MNGBRAN_M": {
+            "table_desc": "관리점소에 대한 기본 정보를 포함하며, 관리점소코드, 회사구분코드, 관리점소명, 지사코드, 지사명, 사업팀코드, 사업팀명, 사업본부코드, 사업본부명, 점소구분코드, 점소구분명, 권역구분코드, 권역구분명, 급지구분코드, 급지구분명, SAP고객코드, 점소업무구분코드, 위탁구분코드, 점소운영번호, 점소관리번호, 사용여부, 점소상태코드, 팀순서번호, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "MNG_BRAN_CD",
+                    "col_desc": "관리점소의 고유 코드"
+                },
+                {
+                    "col": "COMP_DCD",
+                    "col_desc": "회사를 구분하는 코드"
+                },
+                {
+                    "col": "MNG_BRAN_NM",
+                    "col_desc": "관리점소의 명칭"
+                },
+                {
+                    "col": "BRCH_CD",
+                    "col_desc": "지사의 고유 코드"
+                },
+                {
+                    "col": "BRCH_NM",
+                    "col_desc": "지사의 명칭"
+                },
+                {
+                    "col": "BIZ_TEAM_CD",
+                    "col_desc": "사업팀의 고유 코드"
+                },
+                {
+                    "col": "BIZ_TEAM_NM",
+                    "col_desc": "사업팀의 명칭"
+                },
+                {
+                    "col": "BIZ_HQ_CD",
+                    "col_desc": "사업본부의 고유 코드"
+                },
+                {
+                    "col": "BIZ_HQ_NM",
+                    "col_desc": "사업본부의 명칭"
+                },
+                {
+                    "col": "BRAN_DCD",
+                    "col_desc": "점소를 구분하는 코드"
+                },
+                {
+                    "col": "BRAN_DV_NM",
+                    "col_desc": "점소 구분의 명칭"
+                },
+                {
+                    "col": "RAGE_DCD",
+                    "col_desc": "권역을 구분하는 코드"
+                },
+                {
+                    "col": "RAGE_DV_NM",
+                    "col_desc": "권역 구분의 명칭"
+                },
+                {
+                    "col": "RCLS_DCD",
+                    "col_desc": "급지를 구분하는 코드"
+                },
+                {
+                    "col": "RCLS_DV_NM",
+                    "col_desc": "급지 구분의 명칭"
+                },
+                {
+                    "col": "SAP_CUST_CD",
+                    "col_desc": "SAP 시스템에서 사용되는 고객 코드"
+                },
+                {
+                    "col": "BRAN_JOB_DCD",
+                    "col_desc": "점소 업무를 구분하는 코드"
+                },
+                {
+                    "col": "CONSGN_DCD",
+                    "col_desc": "위탁 여부를 구분하는 코드"
+                },
+                {
+                    "col": "BRAN_OP_NO",
+                    "col_desc": "점소 운영을 위한 고유 번호"
+                },
+                {
+                    "col": "BRAN_MNG_NO",
+                    "col_desc": "점소 관리를 위한 고유 번호"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "점소가 사용 중인지 여부"
+                },
+                {
+                    "col": "BRAN_SCD",
+                    "col_desc": "점소의 상태를 나타내는 코드"
+                },
+                {
+                    "col": "TEAM_ODR_NO",
+                    "col_desc": "팀 내에서의 순서 번호"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAML_TB_BIDEALDIV_D": {
+            "table_desc": "고객 분류 상세 코드, 명칭, 거래 구분 그룹명 및 ETL 일시 정보를 포함하는 테이블입니다.",
+            "cols": [
+                {
+                    "col": "CUST_CLSF_DTL_CD",
+                    "col_desc": "고객 분류의 상세 코드"
+                },
+                {
+                    "col": "CUST_CLSF_DTL_NM",
+                    "col_desc": "고객 분류의 상세 명칭"
+                },
+                {
+                    "col": "DEAL_DV_GRP_NM",
+                    "col_desc": "거래 구분에 대한 그룹명"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAML_TB_DATDIV_M": {
+            "table_desc": "자료구분에 대한 기본 정보를 포함하며, 자료구분코드, 자료구분명, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "자료구분의 고유 코드"
+                },
+                {
+                    "col": "DAT_DV_NM",
+                    "col_desc": "자료구분의 명칭"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터 ETL 작업 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAIF_TB_ITSDSCP_P": {
+            "table_desc": "ITS 시스템과 운송장 정보 간의 불일치 내역을 저장하는 테이블",
+            "cols": [
+                {
+                    "col": "DV_NM",
+                    "col_desc": "불일치 내역의 구분명"
+                },
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "불일치가 발생한 운송장의 번호"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "운송장의 집화일자"
+                },
+                {
+                    "col": "TEAM_CD",
+                    "col_desc": "담당 팀의 코드"
+                },
+                {
+                    "col": "BRCH_CD",
+                    "col_desc": "담당 지사의 코드"
+                },
+                {
+                    "col": "CNTR_BRAN_CD",
+                    "col_desc": "계약된 점소의 코드"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소의 코드"
+                },
+                {
+                    "col": "COC_EMPNO",
+                    "col_desc": "집화를 담당한 사원의 번호"
+                },
+                {
+                    "col": "SPITD_CUST_CD",
+                    "col_desc": "주관 고객의 코드"
+                },
+                {
+                    "col": "DTL_ITML_NM",
+                    "col_desc": "운송된 품목의 상세 명칭"
+                },
+                {
+                    "col": "REG_FARE_DCD",
+                    "col_desc": "등록된 운임의 구분 코드[BASIS_LCLSF_CD:CS009] (01:선불,02:착불,03:신용,04:변경안함)"
+                },
+                {
+                    "col": "BOX_TYP_CD",
+                    "col_desc": "박스의 타입 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "BSC_FARE",
+                    "col_desc": "기본 운임 금액"
+                },
+                {
+                    "col": "FARE_DCD",
+                    "col_desc": "운임의 구분 코드[BASIS_LCLSF_CD:CS009] (01:선불,02:착불,03:신용,04:변경안함)"
+                },
+                {
+                    "col": "CURN_BOX_TYP_CD",
+                    "col_desc": "현재 박스의 타입 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "WBL_BSC_FARE",
+                    "col_desc": "운송장의 기본 운임 금액"
+                },
+                {
+                    "col": "WBL_MOD_FARE",
+                    "col_desc": "운송장의 수정된 운임 금액"
+                },
+                {
+                    "col": "ITS_BOX_TYP_CD",
+                    "col_desc": "ITS 시스템의 박스 타입 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "ITS_STD_SELPRC",
+                    "col_desc": "ITS 시스템의 표준 판매가격"
+                },
+                {
+                    "col": "ACTV_RSLT_CD",
+                    "col_desc": "활동의 결과 코드"
+                },
+                {
+                    "col": "BOX_TYP_CNTR_YN",
+                    "col_desc": "박스 타입에 대한 계약 여부"
+                },
+                {
+                    "col": "HRZN_LEN",
+                    "col_desc": "박스의 가로 길이"
+                },
+                {
+                    "col": "VERT_LEN",
+                    "col_desc": "박스의 세로 길이"
+                },
+                {
+                    "col": "HIGT_LEN",
+                    "col_desc": "박스의 높이 길이"
+                },
+                {
+                    "col": "BOX_THSI_TOT_LEN",
+                    "col_desc": "박스의 세 변 길이의 합계"
+                },
+                {
+                    "col": "APLY_CBVOL_VAL",
+                    "col_desc": "적용된 체적 값"
+                },
+                {
+                    "col": "WBL_FARE_MODR_ID",
+                    "col_desc": "운송장 운임을 수정한 사용자의 ID"
+                },
+                {
+                    "col": "WBL_FARE_MOD_DTM",
+                    "col_desc": "운송장 운임이 수정된 일시"
+                },
+                {
+                    "col": "SMLST_BOX_TYP_CNTR_AMT",
+                    "col_desc": "극소 박스 타입에 대한 계약 금액"
+                },
+                {
+                    "col": "CNTR_SMLST_BOX_THSI_SUM_LEN",
+                    "col_desc": "계약된 극소 박스의 세 변 길이 합계"
+                },
+                {
+                    "col": "SML_BOX_TYP_CNTR_AMT",
+                    "col_desc": "소 박스 타입에 대한 계약 금액"
+                },
+                {
+                    "col": "CNTR_SML_BOX_THSI_SUM_LEN",
+                    "col_desc": "계약된 소 박스의 세 변 길이 합계"
+                },
+                {
+                    "col": "MED_BOX_TYP_CNTR_AMT",
+                    "col_desc": "중 박스 타입에 대한 계약 금액"
+                },
+                {
+                    "col": "CNTR_MED_BOX_THSI_SUM_LEN",
+                    "col_desc": "계약된 중 박스의 세 변 길이 합계"
+                },
+                {
+                    "col": "LRG_BOX_TYP_CNTR_AMT",
+                    "col_desc": "대 박스 타입에 대한 계약 금액"
+                },
+                {
+                    "col": "CNTR_LRG_BOX_THSI_SUM_LEN",
+                    "col_desc": "계약된 대 박스의 세 변 길이 합계"
+                },
+                {
+                    "col": "SPC_BOX_TYP_CNTR_AMT",
+                    "col_desc": "이형 박스 타입에 대한 계약 금액"
+                },
+                {
+                    "col": "CNTR_SPC_BOX_THSI_SUM_LEN",
+                    "col_desc": "계약된 이형 박스의 세 변 길이 합계"
+                },
+                {
+                    "col": "FARE_DIF_AMT",
+                    "col_desc": "운임의 차이 금액"
+                },
+                {
+                    "col": "COC_FEE_DIF_AMT",
+                    "col_desc": "집화 수수료의 차이 금액"
+                },
+                {
+                    "col": "DLV_FEE_DIF_AMT",
+                    "col_desc": "배송 수수료의 차이 금액"
+                },
+                {
+                    "col": "APPL_YN",
+                    "col_desc": "이의 제기 여부"
+                },
+                {
+                    "col": "SCAN_BRAN_CD",
+                    "col_desc": "스캔이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 일시"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 프로세스가 실행된 일시"
+                },
+                {
+                    "col": "SPCL_LRG_BOX_TYP_CNTR_AMT",
+                    "col_desc": "특수 대 박스 타입에 대한 계약 금액"
+                },
+                {
+                    "col": "CNTR_SPCL_LRG_BOX_THSI_SUM_LEN",
+                    "col_desc": "계약된 특수 대 박스의 세 변 길이 합계"
+                }
+            ]
+        }
+    },
+    {
+        "IAMD_TB_EMP_M": {
+            "table_desc": "사원의 기본 정보를 포함하는 테이블로, 사원번호, 사원명, 사업부코드, 부서명, 소속구분코드, 소속구분명, 사원구분코드, 사원구분명, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "EMPNO",
+                    "col_desc": "사원의 고유 번호"
+                },
+                {
+                    "col": "EMPYNM",
+                    "col_desc": "사원의 이름"
+                },
+                {
+                    "col": "BZDPT_CD",
+                    "col_desc": "사원이 소속된 사업부의 코드"
+                },
+                {
+                    "col": "DEPT_NM",
+                    "col_desc": "사원이 소속된 부서의 이름"
+                },
+                {
+                    "col": "BLNG_DCD",
+                    "col_desc": "사원의 소속 구분 코드"
+                },
+                {
+                    "col": "BLNG_DV_NM",
+                    "col_desc": "사원의 소속 구분명"
+                },
+                {
+                    "col": "EMP_DCD",
+                    "col_desc": "사원의 구분 코드"
+                },
+                {
+                    "col": "EMP_DV_NM",
+                    "col_desc": "사원의 구분명"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAIF_TB_CCUSTNODLVKPI_R": {
+            "table_desc": "핵심 고객사의 익일 미배송 KPI 현황 정보를 포함하는 테이블로, 운송장 번호, 고객 코드, 접수/집화/배송 일자, 사업팀/지사/점소 코드, 품목명, 운임, 상태 코드, 스캔 일자, 지연 일자 및 사유 코드 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "SPITD_CUST_CD",
+                    "col_desc": "주관 고객사의 코드"
+                },
+                {
+                    "col": "SEND_CUST_CD",
+                    "col_desc": "발송 고객사의 코드"
+                },
+                {
+                    "col": "WBL_RGDD",
+                    "col_desc": "운송장이 등록된 날짜"
+                },
+                {
+                    "col": "ACPT_DT",
+                    "col_desc": "택배가 접수된 날짜"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "택배가 집화된 날짜"
+                },
+                {
+                    "col": "DLV_DT",
+                    "col_desc": "택배가 배송된 날짜"
+                },
+                {
+                    "col": "COC_BIZ_TEAM_CD",
+                    "col_desc": "집화를 담당한 사업팀의 코드"
+                },
+                {
+                    "col": "COC_BRCH_CD",
+                    "col_desc": "집화를 담당한 지사의 코드"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "집화를 담당한 점소의 코드"
+                },
+                {
+                    "col": "DLV_BIZ_TEAM_CD",
+                    "col_desc": "배송을 담당한 사업팀의 코드"
+                },
+                {
+                    "col": "DLV_BRCH_CD",
+                    "col_desc": "배송을 담당한 지사의 코드"
+                },
+                {
+                    "col": "DLV_BRAN_CD",
+                    "col_desc": "배송을 담당한 점소의 코드"
+                },
+                {
+                    "col": "COC_EMPNO",
+                    "col_desc": "집화를 담당한 사원의 번호"
+                },
+                {
+                    "col": "DLV_EMPNO",
+                    "col_desc": "배송을 담당한 사원의 번호"
+                },
+                {
+                    "col": "ITML_NM",
+                    "col_desc": "택배 품목의 이름"
+                },
+                {
+                    "col": "FARE_DCD",
+                    "col_desc": "운임 구분에 대한 코드"
+                },
+                {
+                    "col": "FARE",
+                    "col_desc": "택배 운임 금액"
+                },
+                {
+                    "col": "SCD",
+                    "col_desc": "택배 상태에 대한 코드"
+                },
+                {
+                    "col": "LAST_BRAN_CD",
+                    "col_desc": "택배가 최종적으로 도착한 점소의 코드"
+                },
+                {
+                    "col": "SCAN_DT",
+                    "col_desc": "택배가 스캔된 날짜"
+                },
+                {
+                    "col": "GTHDLV_DLY_DT",
+                    "col_desc": "택배 집배가 지연된 날짜"
+                },
+                {
+                    "col": "GTHDLV_DLY_RSCD",
+                    "col_desc": "택배 집배 지연 사유에 대한 코드"
+                },
+                {
+                    "col": "DLV_CRTR_CD",
+                    "col_desc": "배송 기준에 대한 코드"
+                },
+                {
+                    "col": "REQD_DAYS",
+                    "col_desc": "택배 배송에 소요된 일수"
+                },
+                {
+                    "col": "ETC_CNTN1",
+                    "col_desc": "추가적인 기타 내용 1"
+                },
+                {
+                    "col": "ETC_CNTN2",
+                    "col_desc": "추가적인 기타 내용 2"
+                },
+                {
+                    "col": "ETC_CNTN3",
+                    "col_desc": "추가적인 기타 내용 3"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "레코드가 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "레코드를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "레코드가 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "레코드를 수정한 사용자의 ID"
+                }
+            ]
+        }
+    },
+    {
+        "IAIF_TB_ROBRYOCCR_R": {
+            "table_desc": "도난 발생 건에 대한 정보를 포함하며, 운송장번호, 변상일자, 데이터구분코드, 분실점소코드, 등록/수정 정보 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "도난 발생한 택배의 운송장 고유번호"
+                },
+                {
+                    "col": "INDN_DT",
+                    "col_desc": "도난 건에 대한 변상이 이루어진 날짜"
+                },
+                {
+                    "col": "DATA_DCD",
+                    "col_desc": "데이터 구분을 위한 코드값"
+                },
+                {
+                    "col": "LOS_BRAN_CD",
+                    "col_desc": "도난 발생 지점의 소단위 코드"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAOD_TB_DCRVAP_LIST_P": {
+            "table_desc": "예약 접수 내역에 대한 정보를 포함하며, 고객 코드, 접수 일자, 파일 접수 순서 번호 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "CUST_CD",
+                    "col_desc": "고객의 고유 식별 코드"
+                },
+                {
+                    "col": "ACPT_DT",
+                    "col_desc": "서류 또는 물품 접수가 이루어진 날짜"
+                },
+                {
+                    "col": "FILE_ACPT_ODR_NO",
+                    "col_desc": "파일 접수가 이루어진 순서 번호"
+                },
+                {
+                    "col": "ACPT_ODR_NO",
+                    "col_desc": "접수된 순서 번호"
+                },
+                {
+                    "col": "RSVT_NO",
+                    "col_desc": "서비스 예약을 위한 고유 번호"
+                },
+                {
+                    "col": "REP_RSVT_NO",
+                    "col_desc": "여러 건의 예약 중 대표가 되는 예약의 번호"
+                },
+                {
+                    "col": "CUST_MNG_PRNCTN_CD",
+                    "col_desc": "고객 관리를 위한 거래처 코드"
+                },
+                {
+                    "col": "SEND_CUST_CD",
+                    "col_desc": "물품을 발송하는 고객의 코드"
+                },
+                {
+                    "col": "CUST_ORD_NO",
+                    "col_desc": "고객이 주문할 때 사용하는 주문 번호"
+                },
+                {
+                    "col": "ACPT_BRAN_CD",
+                    "col_desc": "접수가 이루어진 지점의 코드"
+                },
+                {
+                    "col": "RSVT_DCD",
+                    "col_desc": "예약의 종류를 구분하는 코드[BASIS_LCLSF_CD:RV002] (01:일반,02:반품)"
+                },
+                {
+                    "col": "OGN_WBL_NO",
+                    "col_desc": "원래의 운송장 번호"
+                },
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "물품 운송 시 사용하는 운송장의 번호"
+                },
+                {
+                    "col": "SNDR_CUST_CD",
+                    "col_desc": "물품을 보내는 고객의 코드"
+                },
+                {
+                    "col": "SNDR_NM",
+                    "col_desc": "물품을 보내는 고객의 이름"
+                },
+                {
+                    "col": "SNDR_LAREA_TELNO",
+                    "col_desc": "송화인의 지역 전화번호"
+                },
+                {
+                    "col": "SNDR_TONO_TELNO",
+                    "col_desc": "송화인의 전화 국번"
+                },
+                {
+                    "col": "SNDR_INDV_TELNO",
+                    "col_desc": "송화인의 개별 전화번호"
+                },
+                {
+                    "col": "SNDR_FS1_CLPHNO",
+                    "col_desc": "송화인의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_SC2_CLPHNO",
+                    "col_desc": "송화인의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_TH3_CLPHNO",
+                    "col_desc": "송화인의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_ZIP",
+                    "col_desc": "송화인의 우편번호"
+                },
+                {
+                    "col": "SNDR_ZIP_SN",
+                    "col_desc": "송화인의 우편번호 일련번호"
+                },
+                {
+                    "col": "SNDR_BSC_ADDR",
+                    "col_desc": "송화인의 기본 주소"
+                },
+                {
+                    "col": "SNDR_DTL_ADDR",
+                    "col_desc": "송화인의 상세 주소"
+                },
+                {
+                    "col": "RCVR_CUST_CD",
+                    "col_desc": "물품을 받는 고객의 코드"
+                },
+                {
+                    "col": "RCVR_NM",
+                    "col_desc": "물품을 받는 고객의 이름"
+                },
+                {
+                    "col": "RCVR_LAREA_TELNO",
+                    "col_desc": "수화인의 지역 전화번호"
+                },
+                {
+                    "col": "RCVR_TONO_TELNO",
+                    "col_desc": "수화인의 전화 국번"
+                },
+                {
+                    "col": "RCVR_INDV_TELNO",
+                    "col_desc": "수화인의 개별 전화번호"
+                },
+                {
+                    "col": "RCVR_FS1_CLPHNO",
+                    "col_desc": "수화인의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_SC2_CLPHNO",
+                    "col_desc": "수화인의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_TH3_CLPHNO",
+                    "col_desc": "수화인의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_ZIP",
+                    "col_desc": "수화인의 우편번호"
+                },
+                {
+                    "col": "RCVR_ZIP_SN",
+                    "col_desc": "수화인의 우편번호 일련번호"
+                },
+                {
+                    "col": "RCVR_BSC_ADDR",
+                    "col_desc": "수화인의 기본 주소"
+                },
+                {
+                    "col": "RCVR_DTL_ADDR",
+                    "col_desc": "수화인의 상세 주소"
+                },
+                {
+                    "col": "ORDR_NM",
+                    "col_desc": "주문을 한 고객의 이름"
+                },
+                {
+                    "col": "ORDR_LTELNO",
+                    "col_desc": "주문자의 지역 전화번호"
+                },
+                {
+                    "col": "ORDR_OTELNO",
+                    "col_desc": "주문자의 전화 국번"
+                },
+                {
+                    "col": "ORDR_ITELNO",
+                    "col_desc": "주문자의 개별 전화번호"
+                },
+                {
+                    "col": "ORDR_FS1_CLPHNO",
+                    "col_desc": "주문자의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "ORDR_SC2_CLPHNO",
+                    "col_desc": "주문자의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "ORDR_TH3_CLPHNO",
+                    "col_desc": "주문자의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "ORDR_ZIP",
+                    "col_desc": "주문자의 우편번호"
+                },
+                {
+                    "col": "ORDR_BSC_ADDR",
+                    "col_desc": "주문자의 기본 주소"
+                },
+                {
+                    "col": "ORDR_DTL_ADDR",
+                    "col_desc": "주문자의 상세 주소"
+                },
+                {
+                    "col": "DLVS_GOODS_CD",
+                    "col_desc": "배송되는 상품의 코드"
+                },
+                {
+                    "col": "CNTR_ITML_CD",
+                    "col_desc": "계약된 품목의 코드"
+                },
+                {
+                    "col": "BOX_TYP_CD",
+                    "col_desc": "사용된 박스의 타입 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "FARE_RAGE_DCD",
+                    "col_desc": "운임이 적용되는 권역 구분 코드"
+                },
+                {
+                    "col": "QTY",
+                    "col_desc": "주문 또는 배송된 수량"
+                },
+                {
+                    "col": "BSC_FARE_AMT",
+                    "col_desc": "기본적으로 적용된 운임 금액"
+                },
+                {
+                    "col": "FERY_FARE_AMT",
+                    "col_desc": "도선에 적용된 운임 금액"
+                },
+                {
+                    "col": "INSTL_FARE_AMT",
+                    "col_desc": "제품 설치에 따른 추가 운임 금액"
+                },
+                {
+                    "col": "HNDLOW_FARE_AMT",
+                    "col_desc": "취급 시 발생하는 추가 운임 금액"
+                },
+                {
+                    "col": "JEJU_FARE_AMT",
+                    "col_desc": "제주 지역으로 배송 시 적용되는 추가 운임 금액"
+                },
+                {
+                    "col": "ITML_CD",
+                    "col_desc": "상품 또는 품목의 고유 코드"
+                },
+                {
+                    "col": "ITML_NM",
+                    "col_desc": "상품 또는 품목의 명칭"
+                },
+                {
+                    "col": "DTL_ITML_NM",
+                    "col_desc": "품목의 상세 명칭"
+                },
+                {
+                    "col": "CMDTS_AMT",
+                    "col_desc": "물품의 총 금액"
+                },
+                {
+                    "col": "PRT_CNT",
+                    "col_desc": "문서 또는 라벨 출력 건수"
+                },
+                {
+                    "col": "SEPR_PACKN_SENU",
+                    "col_desc": "분리 포장 시의 순번"
+                },
+                {
+                    "col": "SUMPKG_NO",
+                    "col_desc": "여러 품목을 함께 포장할 때 사용되는 번호"
+                },
+                {
+                    "col": "INNR_ITML_QTY",
+                    "col_desc": "하나의 포장 내에 포함된 품목의 수량"
+                },
+                {
+                    "col": "COC_PREARR_DT",
+                    "col_desc": "물품 집화가 예정된 날짜"
+                },
+                {
+                    "col": "COC_PREARR_TM",
+                    "col_desc": "물품 집화가 예정된 시간"
+                },
+                {
+                    "col": "COC_PREARR_BRAN_CD",
+                    "col_desc": "집화가 예정된 점소의 코드"
+                },
+                {
+                    "col": "COC_SM_EMPNO",
+                    "col_desc": "집화 작업을 담당하는 사원의 번호"
+                },
+                {
+                    "col": "DLV_PREARR_DT",
+                    "col_desc": "배송이 예정된 날짜"
+                },
+                {
+                    "col": "DLV_PREARR_TM",
+                    "col_desc": "배송이 예정된 시간"
+                },
+                {
+                    "col": "DLV_PREARR_BRAN_CD",
+                    "col_desc": "배송이 예정된 점소의 코드"
+                },
+                {
+                    "col": "DLV_SM_EMPNO",
+                    "col_desc": "배송을 담당하는 사원의 번호"
+                },
+                {
+                    "col": "DLV_TIME_DCD",
+                    "col_desc": "배송 시기를 구분하는 코드"
+                },
+                {
+                    "col": "HNGR_DLV_YN",
+                    "col_desc": "행거를 사용하여 배송하는지 여부"
+                },
+                {
+                    "col": "CUST_SMS_SEND_DV_VAL",
+                    "col_desc": "고객에게 SMS를 발송하는 경우의 구분값"
+                },
+                {
+                    "col": "PRE_NMBR_YN",
+                    "col_desc": "배송 전에 번호를 미리 지정하는지 여부"
+                },
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "자료를 구분하는 코드"
+                },
+                {
+                    "col": "RMK_CNTN1",
+                    "col_desc": "추가 정보를 제공하는 비고 내용"
+                },
+                {
+                    "col": "RMK_CNTN2",
+                    "col_desc": "추가 정보를 제공하는 두 번째 비고 내용"
+                },
+                {
+                    "col": "RMK_CNTN3",
+                    "col_desc": "추가 정보를 제공하는 세 번째 비고 내용"
+                },
+                {
+                    "col": "FILE_ACPT_PRGS_SCD",
+                    "col_desc": "파일 접수의 진행 상태를 나타내는 코드"
+                },
+                {
+                    "col": "ERR_MSG_CNTN",
+                    "col_desc": "발생한 오류에 대한 메시지 내용"
+                },
+                {
+                    "col": "ERR_CD",
+                    "col_desc": "발생한 오류를 식별하는 코드"
+                },
+                {
+                    "col": "BOX_QTY_APLY_YN",
+                    "col_desc": "박스 수량이 적용되었는지 여부"
+                },
+                {
+                    "col": "FIX_RCVR_CD",
+                    "col_desc": "고정된 수화인의 코드"
+                },
+                {
+                    "col": "WHIN_TRNL_CD",
+                    "col_desc": "입고가 이루어진 터미널의 코드"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 시스템에 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 마지막으로 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 마지막으로 수정한 사용자의 ID"
+                },
+                {
+                    "col": "COC_BRAN_CRTR_CD",
+                    "col_desc": "집화를 담당하는 점소의 기준 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 추출, 변환, 로드(ETL) 처리된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAOD_TB_DCWBWP_WBLLASTS_R": {
+            "table_desc": "운송장의 최종 상태 정보를 포함하며, 운송장 번호, 스캔 정보, 작업자 정보, 운송 관련 정보 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "SCAN_DCD",
+                    "col_desc": "스캔 유형을 구분하는 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "SCAN_DT",
+                    "col_desc": "스캔이 이루어진 날짜"
+                },
+                {
+                    "col": "SCAN_HMS",
+                    "col_desc": "스캔이 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "스캔이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "WKR_ID",
+                    "col_desc": "스캔을 수행한 작업자의 ID"
+                },
+                {
+                    "col": "PATN_BRAN_CD",
+                    "col_desc": "상대 점소의 코드"
+                },
+                {
+                    "col": "TRNSP_MNG_NO",
+                    "col_desc": "운송 관리를 위한 고유번호"
+                },
+                {
+                    "col": "SCNTR_MNG_NO",
+                    "col_desc": "도급 관리를 위한 고유번호"
+                },
+                {
+                    "col": "SCAN_ADTNL_CNTN",
+                    "col_desc": "스캔 시 추가로 입력된 내용"
+                },
+                {
+                    "col": "RTLN_NO",
+                    "col_desc": "운송 노선의 고유번호"
+                },
+                {
+                    "col": "VECL_NO",
+                    "col_desc": "운송에 사용된 차량의 번호"
+                },
+                {
+                    "col": "SCAN_RSCD",
+                    "col_desc": "스캔 사유를 나타내는 코드"
+                },
+                {
+                    "col": "GOODS_CD",
+                    "col_desc": "운송된 상품의 코드"
+                },
+                {
+                    "col": "ARV_DCD",
+                    "col_desc": "운송장의 도착 유형을 구분하는 코드"
+                },
+                {
+                    "col": "RMN_YN",
+                    "col_desc": "운송장이 잔류 상태인지 여부"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "운송장이 사용 중인지 여부"
+                },
+                {
+                    "col": "EQUP_DCD",
+                    "col_desc": "스캔에 사용된 장비의 유형을 구분하는 코드"
+                },
+                {
+                    "col": "EQUP_SN",
+                    "col_desc": "스캔에 사용된 장비의 일련번호"
+                },
+                {
+                    "col": "PGM_ID",
+                    "col_desc": "스캔과 관련된 프로그램의 ID"
+                },
+                {
+                    "col": "DEST_CD",
+                    "col_desc": "운송장의 목적지를 나타내는 코드"
+                },
+                {
+                    "col": "REGS_BRAN_CD",
+                    "col_desc": "운송장 정보가 등록된 점소의 코드"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "운송장 정보를 등록한 작업자의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "운송장 정보가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "운송장 정보를 수정한 작업자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "운송장 정보가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "택배가 집화된 날짜"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "집화점의 소단위 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAOD_TB_DCCLCL_ACDTREGS_P": {
+            "table_desc": "사고 등록 내역에 대한 정보를 포함하며, 운송장번호, 신고자 정보, 사고 유형 및 상세 내용, 품목 정보 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "사고와 관련된 운송장의 고유번호"
+                },
+                {
+                    "col": "PROC_BRAN_CD",
+                    "col_desc": "사고 처리를 담당하는 점소의 코드"
+                },
+                {
+                    "col": "RPTR_DCD",
+                    "col_desc": "사고 신고자의 구분 코드"
+                },
+                {
+                    "col": "RPTR_NM",
+                    "col_desc": "사고를 신고한 사람의 이름"
+                },
+                {
+                    "col": "ACDT_TPCD",
+                    "col_desc": "사고의 유형을 나타내는 코드"
+                },
+                {
+                    "col": "LOS_PLC_CD",
+                    "col_desc": "사고 발생 시 분실된 장소의 코드"
+                },
+                {
+                    "col": "LOS_BRAN_CD",
+                    "col_desc": "사고 발생 시 분실된 점소의 코드"
+                },
+                {
+                    "col": "ACDT_PRGS_SCD",
+                    "col_desc": "사고 처리 진행 상태를 나타내는 코드"
+                },
+                {
+                    "col": "OCCR_DT",
+                    "col_desc": "사고가 발생한 날짜"
+                },
+                {
+                    "col": "REGS_BRF_CNTN",
+                    "col_desc": "사고 등록 시 작성한 개요 내용"
+                },
+                {
+                    "col": "REGS_BRAN_CD",
+                    "col_desc": "사고를 등록한 점소의 코드"
+                },
+                {
+                    "col": "REGS_USRID",
+                    "col_desc": "사고를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "REGS_DT",
+                    "col_desc": "사고가 등록된 날짜"
+                },
+                {
+                    "col": "ACDT_BRF_CNTN",
+                    "col_desc": "사고에 대한 개요 내용"
+                },
+                {
+                    "col": "ITML_NM",
+                    "col_desc": "사고와 관련된 품목의 이름"
+                },
+                {
+                    "col": "WGHT",
+                    "col_desc": "사고 품목의 무게"
+                },
+                {
+                    "col": "OUTWRP_DCD",
+                    "col_desc": "품목의 겉포장 구분 코드"
+                },
+                {
+                    "col": "PTCT_DCD",
+                    "col_desc": "품목의 보호재 구분 코드"
+                },
+                {
+                    "col": "BNDG_DCD",
+                    "col_desc": "품목의 벤딩 구분 코드"
+                },
+                {
+                    "col": "DMG_DISP_YN",
+                    "col_desc": "품목이 파손되었는지 여부"
+                },
+                {
+                    "col": "TRMT_DISP_YN",
+                    "col_desc": "품목이 변질되었는지 여부"
+                },
+                {
+                    "col": "UPDN_DISP_YN",
+                    "col_desc": "품목의 상하 표시 여부"
+                },
+                {
+                    "col": "ETC_DISP_YN",
+                    "col_desc": "품목에 대한 기타 표시 여부"
+                },
+                {
+                    "col": "ACPT_BRAN_CD",
+                    "col_desc": "사고 접수를 담당한 점소의 코드"
+                },
+                {
+                    "col": "ACPTR_ID",
+                    "col_desc": "사고를 접수한 사용자의 ID"
+                },
+                {
+                    "col": "ACPT_DT",
+                    "col_desc": "사고가 접수된 날짜"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "데이터의 사용 여부"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "RPTR_LAREA_TELNO",
+                    "col_desc": "신고자의 지역 전화번호"
+                },
+                {
+                    "col": "RPTR_TONO_TELNO",
+                    "col_desc": "신고자의 국번 전화번호"
+                },
+                {
+                    "col": "RPTR_ITELNO",
+                    "col_desc": "신고자의 개별 전화번호"
+                },
+                {
+                    "col": "ACDT_HMSHPG_DCD",
+                    "col_desc": "사고와 관련된 홈쇼핑 구분 코드"
+                },
+                {
+                    "col": "ACDT_WBL_CUST_MOD_YN",
+                    "col_desc": "사고 운송장이 고객에 의해 수정되었는지 여부"
+                },
+                {
+                    "col": "ACDT_DTL_TPCD",
+                    "col_desc": "사고의 상세 유형 코드"
+                },
+                {
+                    "col": "ACDT_REGS_MDA_CD",
+                    "col_desc": "사고가 등록된 매체의 코드"
+                },
+                {
+                    "col": "ACDT_PROC_REQ_DCD",
+                    "col_desc": "사고 처리 요청 구분 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAOD_TB_DCCLCL_ACDTPROC_P": {
+            "table_desc": "사고 처리 내역에 대한 정보를 포함하며, 운송장 번호, 변상 금액, 판정 내용, 처분 방법 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "PRE_INDN_BRAN_CD",
+                    "col_desc": "선변상이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "PRE_INDN_DT",
+                    "col_desc": "선변상이 이루어진 날짜"
+                },
+                {
+                    "col": "PRE_INDN_AMT",
+                    "col_desc": "선변상으로 지급된 금액"
+                },
+                {
+                    "col": "GOODS_PRC_AMT",
+                    "col_desc": "사고 상품의 가격 금액"
+                },
+                {
+                    "col": "INDN_REQ_AMT",
+                    "col_desc": "변상 요청된 금액"
+                },
+                {
+                    "col": "INDN_CNF_AMT",
+                    "col_desc": "최종 변상 확정된 금액"
+                },
+                {
+                    "col": "INDN_CNF_MTAGPR_NM",
+                    "col_desc": "변상 확정 시 합의한 사람의 이름"
+                },
+                {
+                    "col": "INDN_MTAGPR_RLP_CD",
+                    "col_desc": "변상 합의자와의 관계를 나타내는 코드"
+                },
+                {
+                    "col": "ACPT_CMPLT_OPI_CNTN",
+                    "col_desc": "접수 완료 시 작성된 의견 내용"
+                },
+                {
+                    "col": "ACPT_CMPLT_BRAN_CD",
+                    "col_desc": "접수가 완료된 점소의 코드"
+                },
+                {
+                    "col": "ACPT_CMPE_ID",
+                    "col_desc": "접수를 완료한 사람의 ID"
+                },
+                {
+                    "col": "ACPT_CMPLT_DT",
+                    "col_desc": "접수가 완료된 날짜"
+                },
+                {
+                    "col": "JDG_BRF_CNTN",
+                    "col_desc": "사고 판정에 대한 개요 내용"
+                },
+                {
+                    "col": "JDG_BRAN_CD",
+                    "col_desc": "판정이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "JDDSR_ID",
+                    "col_desc": "판정을 수행한 사람의 ID"
+                },
+                {
+                    "col": "JDG_DT",
+                    "col_desc": "판정이 이루어진 날짜"
+                },
+                {
+                    "col": "INDN_AMT",
+                    "col_desc": "최종 변상된 금액"
+                },
+                {
+                    "col": "REMIT_FEE_AMT",
+                    "col_desc": "변상 금액 송금 시 발생한 수수료 금액"
+                },
+                {
+                    "col": "BANK_CD",
+                    "col_desc": "변상 금액이 송금된 은행의 코드"
+                },
+                {
+                    "col": "DPST_ACCNT_NO",
+                    "col_desc": "변상 금액이 송금된 예금 계좌번호"
+                },
+                {
+                    "col": "DPSTR_NM",
+                    "col_desc": "변상 금액이 송금된 예금주 이름"
+                },
+                {
+                    "col": "DPSTR_RLP_CD",
+                    "col_desc": "예금주와의 관계를 나타내는 코드"
+                },
+                {
+                    "col": "INDN_BRAN_CD",
+                    "col_desc": "변상이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "INDN_REGR_ID",
+                    "col_desc": "변상 내역을 등록한 사람의 ID"
+                },
+                {
+                    "col": "INDN_DT",
+                    "col_desc": "변상이 이루어진 날짜"
+                },
+                {
+                    "col": "CVRUP_OPI_CNTN",
+                    "col_desc": "무마(사고 처리 종결) 시 작성된 의견 내용"
+                },
+                {
+                    "col": "CVRUP_MTAGPR_NM",
+                    "col_desc": "무마 시 합의한 사람의 이름"
+                },
+                {
+                    "col": "CVRUP_MTAGPR_RLP_CD",
+                    "col_desc": "무마 합의자와의 관계를 나타내는 코드"
+                },
+                {
+                    "col": "CVRUP_BRAN_CD",
+                    "col_desc": "무마가 이루어진 점소의 코드"
+                },
+                {
+                    "col": "CVUPMN_ID",
+                    "col_desc": "무마를 수행한 사람의 ID"
+                },
+                {
+                    "col": "CVRUP_DT",
+                    "col_desc": "무마가 이루어진 날짜"
+                },
+                {
+                    "col": "DOCS_INSP_CNF_BRAN_CD",
+                    "col_desc": "서류 심사 확정이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "DOCS_INSP_CNF_EMPNO",
+                    "col_desc": "서류 심사 확정을 수행한 사원의 번호"
+                },
+                {
+                    "col": "DOCS_INSP_CNF_DT",
+                    "col_desc": "서류 심사 확정이 이루어진 날짜"
+                },
+                {
+                    "col": "DSPS_MTHD_CD",
+                    "col_desc": "사고 처분 방법을 나타내는 코드"
+                },
+                {
+                    "col": "DSPS_RSCD",
+                    "col_desc": "사고 처분 사유를 나타내는 코드"
+                },
+                {
+                    "col": "DSPS_OPI_CNTN",
+                    "col_desc": "사고 처분에 대한 의견 내용"
+                },
+                {
+                    "col": "DSPS_BRAN_CD",
+                    "col_desc": "사고 처분이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "PPSTNP_ID",
+                    "col_desc": "사고 처분을 수행한 사람의 ID"
+                },
+                {
+                    "col": "DSPS_DT",
+                    "col_desc": "사고 처분이 이루어진 날짜"
+                },
+                {
+                    "col": "CPRC_CNF_YM",
+                    "col_desc": "원가가 확정된 연월"
+                },
+                {
+                    "col": "DGR_NO",
+                    "col_desc": "사고 처리 차수를 나타내는 번호"
+                },
+                {
+                    "col": "SMS_TNS_YN",
+                    "col_desc": "SMS 전송 여부를 나타내는 값"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "해당 레코드를 등록한 사람의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "레코드가 등록된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "해당 레코드를 최종 수정한 사람의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "레코드가 최종 수정된 일시"
+                },
+                {
+                    "col": "ACDT_JDG_CD",
+                    "col_desc": "사고에 대한 판정 결과를 나타내는 코드"
+                },
+                {
+                    "col": "CVRUP_DCD",
+                    "col_desc": "무마 유형을 나타내는 코드"
+                },
+                {
+                    "col": "DOCS_UNPR_BRAN_CD",
+                    "col_desc": "서류가 미비된 점소의 코드"
+                },
+                {
+                    "col": "DOCS_UNPR_EMPNO",
+                    "col_desc": "서류 미비 사항을 처리한 사원의 번호"
+                },
+                {
+                    "col": "DOCS_UNPR_DT",
+                    "col_desc": "서류가 미비된 날짜"
+                },
+                {
+                    "col": "DOCS_UNPR_OPI_CNTN",
+                    "col_desc": "서류 미비에 대한 의견 내용"
+                },
+                {
+                    "col": "PSTNG_DT",
+                    "col_desc": "전기일자"
+                },
+                {
+                    "col": "RSVT_MDA_CD",
+                    "col_desc": "예약 매체 코드"
+                },
+                {
+                    "col": "AUTO_JDG_YN",
+                    "col_desc": "자동 판정 여부"
+                },
+                {
+                    "col": "ACDT_BILL_FARE",
+                    "col_desc": "사고 청구 운임"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 일시"
+                },
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "운송장 번호"
+                },
+                {
+                    "col": "PRE_INDN_BRAN_CD",
+                    "col_desc": "선변상 점소 코드"
+                },
+                {
+                    "col": "PRE_INDN_DT",
+                    "col_desc": "선변상 일자"
+                },
+                {
+                    "col": "PRE_INDN_AMT",
+                    "col_desc": "선변상 금액"
+                },
+                {
+                    "col": "GOODS_PRC_AMT",
+                    "col_desc": "상품 가격 금액"
+                },
+                {
+                    "col": "INDN_REQ_AMT",
+                    "col_desc": "변상 요청 금액"
+                },
+                {
+                    "col": "INDN_CNF_AMT",
+                    "col_desc": "변상 확정 금액"
+                },
+                {
+                    "col": "INDN_CNF_MTAGPR_NM",
+                    "col_desc": "변상 확정 합의자 명"
+                },
+                {
+                    "col": "INDN_MTAGPR_RLP_CD",
+                    "col_desc": "변상 합의자 관계 코드"
+                },
+                {
+                    "col": "ACPT_CMPLT_OPI_CNTN",
+                    "col_desc": "접수 완료 의견 내용"
+                },
+                {
+                    "col": "ACPT_CMPLT_BRAN_CD",
+                    "col_desc": "접수 완료 점소 코드"
+                },
+                {
+                    "col": "ACPT_CMPE_ID",
+                    "col_desc": "접수 완료자 ID"
+                },
+                {
+                    "col": "ACPT_CMPLT_DT",
+                    "col_desc": "접수 완료 일자"
+                },
+                {
+                    "col": "JDG_BRF_CNTN",
+                    "col_desc": "판정 개요 내용"
+                },
+                {
+                    "col": "JDG_BRAN_CD",
+                    "col_desc": "판정 점소 코드"
+                },
+                {
+                    "col": "JDDSR_ID",
+                    "col_desc": "판정자 ID"
+                },
+                {
+                    "col": "JDG_DT",
+                    "col_desc": "판정 일자"
+                },
+                {
+                    "col": "INDN_AMT",
+                    "col_desc": "변상 금액"
+                },
+                {
+                    "col": "REMIT_FEE_AMT",
+                    "col_desc": "송금 수수료 금액"
+                },
+                {
+                    "col": "BANK_CD",
+                    "col_desc": "은행 코드"
+                },
+                {
+                    "col": "DPST_ACCNT_NO",
+                    "col_desc": "예금 계좌 번호"
+                },
+                {
+                    "col": "DPSTR_NM",
+                    "col_desc": "예금주 명"
+                },
+                {
+                    "col": "DPSTR_RLP_CD",
+                    "col_desc": "예금주 관계 코드"
+                },
+                {
+                    "col": "INDN_BRAN_CD",
+                    "col_desc": "변상 점소 코드"
+                },
+                {
+                    "col": "INDN_REGR_ID",
+                    "col_desc": "변상 등록자 ID"
+                },
+                {
+                    "col": "INDN_DT",
+                    "col_desc": "변상 일자"
+                },
+                {
+                    "col": "CVRUP_OPI_CNTN",
+                    "col_desc": "무마 의견 내용"
+                },
+                {
+                    "col": "CVRUP_MTAGPR_NM",
+                    "col_desc": "무마 합의자 명"
+                },
+                {
+                    "col": "CVRUP_MTAGPR_RLP_CD",
+                    "col_desc": "무마 합의자 관계 코드"
+                },
+                {
+                    "col": "CVRUP_BRAN_CD",
+                    "col_desc": "무마 점소 코드"
+                },
+                {
+                    "col": "CVUPMN_ID",
+                    "col_desc": "무마자 ID"
+                },
+                {
+                    "col": "CVRUP_DT",
+                    "col_desc": "무마 일자"
+                },
+                {
+                    "col": "DOCS_INSP_CNF_BRAN_CD",
+                    "col_desc": "서류 심사 확정 점소 코드"
+                },
+                {
+                    "col": "DOCS_INSP_CNF_EMPNO",
+                    "col_desc": "서류 심사 확정 사원 번호"
+                },
+                {
+                    "col": "DOCS_INSP_CNF_DT",
+                    "col_desc": "서류 심사 확정 일자"
+                },
+                {
+                    "col": "DSPS_MTHD_CD",
+                    "col_desc": "처분 방법 코드"
+                },
+                {
+                    "col": "DSPS_RSCD",
+                    "col_desc": "처분 사유 코드"
+                },
+                {
+                    "col": "DSPS_OPI_CNTN",
+                    "col_desc": "처분 의견 내용"
+                },
+                {
+                    "col": "DSPS_BRAN_CD",
+                    "col_desc": "처분 점소 코드"
+                },
+                {
+                    "col": "PPSTNP_ID",
+                    "col_desc": "처분자 ID"
+                },
+                {
+                    "col": "DSPS_DT",
+                    "col_desc": "처분 일자"
+                },
+                {
+                    "col": "CPRC_CNF_YM",
+                    "col_desc": "원가 확정 연월"
+                },
+                {
+                    "col": "DGR_NO",
+                    "col_desc": "차수 번호"
+                },
+                {
+                    "col": "SMS_TNS_YN",
+                    "col_desc": "SMS 전송 여부"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "등록자 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "등록 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "수정자 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "수정 일시"
+                },
+                {
+                    "col": "ACDT_JDG_CD",
+                    "col_desc": "사고 판정 코드"
+                },
+                {
+                    "col": "CVRUP_DCD",
+                    "col_desc": "무마 구분 코드"
+                },
+                {
+                    "col": "ACDT_BILL_FARE",
+                    "col_desc": "사고 청구 운임"
+                },
+                {
+                    "col": "DOCS_UNPR_SPMT_CMPLT_YN",
+                    "col_desc": "서류 미비 보완 완료 여부"
+                },
+                {
+                    "col": "WBL_DLY_DT",
+                    "col_desc": "운송장 지연 일자"
+                },
+                {
+                    "col": "ITML_TAXC_YN",
+                    "col_desc": "품목 과세 여부"
+                },
+                {
+                    "col": "RLT_WBL_NO",
+                    "col_desc": "관련 운송장 번호"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAOD_TB_DCBSUS_EMP_M": {
+            "table_desc": "사원의 기본 정보를 포함하는 테이블로, 사원번호, 소속, 업무구분, 이름, 전화번호, 주소, 입사/퇴사일자 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "EMPNO",
+                    "col_desc": "사원의 고유 번호"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "사원이 소속된 점소의 코드"
+                },
+                {
+                    "col": "BLNG_DCD",
+                    "col_desc": "사원의 소속 구분 코드"
+                },
+                {
+                    "col": "EMP_JOB_DCD",
+                    "col_desc": "사원의 업무 구분 코드"
+                },
+                {
+                    "col": "EMPYNM",
+                    "col_desc": "사원의 이름"
+                },
+                {
+                    "col": "COMP_LTELNO",
+                    "col_desc": "회사 지역 전화번호"
+                },
+                {
+                    "col": "COMP_OTELNO",
+                    "col_desc": "회사 국번 전화번호"
+                },
+                {
+                    "col": "COMP_ITELNO",
+                    "col_desc": "회사 개별 전화번호"
+                },
+                {
+                    "col": "GTUS_FS1_CLPHNO",
+                    "col_desc": "집배용 첫째 휴대폰 번호"
+                },
+                {
+                    "col": "GTUS_SC2_CLPHNO",
+                    "col_desc": "집배용 둘째 휴대폰 번호"
+                },
+                {
+                    "col": "GTUS_TH3_CLPHNO",
+                    "col_desc": "집배용 세째 휴대폰 번호"
+                },
+                {
+                    "col": "OHSE_LTELNO",
+                    "col_desc": "자택 지역 전화번호"
+                },
+                {
+                    "col": "OHSE_OTELNO",
+                    "col_desc": "자택 국번 전화번호"
+                },
+                {
+                    "col": "OHSE_ITELNO",
+                    "col_desc": "자택 개별 전화번호"
+                },
+                {
+                    "col": "HIRE_DT",
+                    "col_desc": "사원의 입사일자"
+                },
+                {
+                    "col": "RTRM_DT",
+                    "col_desc": "사원의 퇴사일자"
+                },
+                {
+                    "col": "ZIP",
+                    "col_desc": "사원의 주소 우편번호"
+                },
+                {
+                    "col": "BSC_ADDR",
+                    "col_desc": "사원의 기본 주소"
+                },
+                {
+                    "col": "DTL_ADDR",
+                    "col_desc": "사원의 상세 주소"
+                },
+                {
+                    "col": "PRTNCO_ID",
+                    "col_desc": "사원이 소속된 파트너사의 ID"
+                },
+                {
+                    "col": "OLD_EMPNO",
+                    "col_desc": "사원의 이전 사원번호"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "사원 정보의 사용 여부"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "사원 정보의 등록 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "사원 정보를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "사원 정보의 수정 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "사원 정보를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "EMP_GRD_CD",
+                    "col_desc": "사원의 등급 코드"
+                },
+                {
+                    "col": "RMK_CNTN",
+                    "col_desc": "사원 정보에 대한 비고 내용"
+                },
+                {
+                    "col": "BRTHDT",
+                    "col_desc": "사원의 생년월일"
+                },
+                {
+                    "col": "BRTHD_TYP_CD",
+                    "col_desc": "생년월일의 타입 코드"
+                },
+                {
+                    "col": "UNFM_SZ_CD",
+                    "col_desc": "사원의 유니폼 사이즈 코드"
+                },
+                {
+                    "col": "EQUP_DCD",
+                    "col_desc": "사원이 사용하는 장비의 구분 코드"
+                },
+                {
+                    "col": "EMP_DCD",
+                    "col_desc": "사원의 구분 코드"
+                },
+                {
+                    "col": "DLVS_EMP_KDCD",
+                    "col_desc": "택배 사원의 종류 코드"
+                },
+                {
+                    "col": "PAYN_TRACK_SRCH_YN",
+                    "col_desc": "입금 추적 조회 가능 여부"
+                },
+                {
+                    "col": "EMPYNM2",
+                    "col_desc": "사원의 이름 2"
+                },
+                {
+                    "col": "PASS_YN",
+                    "col_desc": "사원의 출입증 소지 여부"
+                },
+                {
+                    "col": "PLDG_YN",
+                    "col_desc": "사원의 서약서 제출 여부"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 처리 일시"
+                },
+                {
+                    "col": "AWORK_SHPE_DCD",
+                    "col_desc": "사원의 근무 형태 구분 코드"
+                },
+                {
+                    "col": "GTHDLV_TEAM_CD",
+                    "col_desc": "사원이 소속된 집배팀 코드"
+                },
+                {
+                    "col": "USER_TPCD",
+                    "col_desc": "사원의 사용자 유형 코드"
+                },
+                {
+                    "col": "SM_BNM_NM",
+                    "col_desc": "사원의 SM 별칭명"
+                },
+                {
+                    "col": "SM_BNM_NO",
+                    "col_desc": "사원의 SM 별칭 번호"
+                },
+                {
+                    "col": "DLVS_USER_ROLE_DCD",
+                    "col_desc": "택배 사용자의 역할 구분 코드"
+                },
+                {
+                    "col": "SM_TEAM_DCD",
+                    "col_desc": "사원의 SM 팀 구분 코드"
+                },
+                {
+                    "col": "TRNL_CD",
+                    "col_desc": "사원이 사용하는 터미널 코드"
+                },
+                {
+                    "col": "GTHDLV_JOB_DV_YN",
+                    "col_desc": "사원의 집배 업무 구분 여부"
+                }
+            ]
+        }
+    },
+    {
+        "IAIF_TB_CSSMTRNL_M": {
+            "table_desc": "CS 지표 집계 터미널에 대한 기본 정보를 포함합니다.",
+            "cols": [
+                {
+                    "col": "APLY_YM",
+                    "col_desc": "데이터가 적용되는 연월"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소의 고유 코드"
+                },
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "데이터 유형을 구분하는 코드"
+                },
+                {
+                    "col": "MNG_UP_BRAN_CD",
+                    "col_desc": "관리 상위 점소의 고유 코드"
+                },
+                {
+                    "col": "OP_UP_BRAN_CD",
+                    "col_desc": "운영 상위 점소의 고유 코드"
+                },
+                {
+                    "col": "SMRY_TRNL_CD",
+                    "col_desc": "집계 터미널의 고유 코드"
+                },
+                {
+                    "col": "BZDPT_CD",
+                    "col_desc": "사업부의 고유 코드"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "SMRY_TRNL_DCD",
+                    "col_desc": "집계 터미널 유형을 구분하는 코드"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCPDPS_GTHDLVTR_M": {
+            "table_desc": "집배 실적에 대한 기본 정보를 포함하며, 운송장번호, 화물상태구분코드, 집배사원번호, 집배일자, 점소코드, 집배시분초, 장비구분코드, 취급점코드, 등록일시, 등록자ID, 수정일시, 수정자ID, 운임구분코드, 입금금액, 입금상태코드, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "CRG_ST_DCD",
+                    "col_desc": "화물의 상태를 구분하는 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "GTHDLV_EMPNO",
+                    "col_desc": "집배를 담당한 사원의 고유번호"
+                },
+                {
+                    "col": "GTHDLV_DT",
+                    "col_desc": "집배가 이루어진 날짜"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "집배가 이루어진 점소의 코드"
+                },
+                {
+                    "col": "GTHDLV_HMS",
+                    "col_desc": "집배가 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "EQUP_DCD",
+                    "col_desc": "집배 시 사용된 장비를 구분하는 코드"
+                },
+                {
+                    "col": "DLNGBR_CD",
+                    "col_desc": "집배가 이루어진 취급점의 코드"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "FARE_DCD",
+                    "col_desc": "운임을 구분하는 코드[BASIS_LCLSF_CD:CS009] (01:선불,02:착불,03:신용,04:변경안함)"
+                },
+                {
+                    "col": "PAYN_AMT",
+                    "col_desc": "입금된 금액"
+                },
+                {
+                    "col": "PAYN_SCD",
+                    "col_desc": "입금 상태를 나타내는 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCPDCL_SPLIZGOO_P": {
+            "table_desc": "특화상품 내역에 대한 정보를 포함하며, 운송장번호, 집배사원번호, 집배일자, 점소코드, 집배시분초, 특화상품구분코드, 장비구분코드, 등록일시, 등록자ID, 수정일시, 수정자ID, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배의 운송장 고유번호"
+                },
+                {
+                    "col": "GTHDLV_EMPNO",
+                    "col_desc": "집배를 담당한 사원의 고유번호"
+                },
+                {
+                    "col": "GTHDLV_DT",
+                    "col_desc": "집배가 이루어진 날짜"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "집배가 이루어진 점소의 코드"
+                },
+                {
+                    "col": "GTHDLV_HMS",
+                    "col_desc": "집배가 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "SPLIZ_GOODS_DCD",
+                    "col_desc": "특화상품의 구분 코드"
+                },
+                {
+                    "col": "EQUP_DCD",
+                    "col_desc": "특화상품 관련 장비의 구분 코드"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 일시"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCPDPS_GTHDLVTD_M": {
+            "table_desc": "집배 지연 정보에 대한 기본 데이터를 포함합니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "지연된 운송장의 고유번호"
+                },
+                {
+                    "col": "WORK_DT",
+                    "col_desc": "지연 작업이 발생한 날짜"
+                },
+                {
+                    "col": "DLY_KDCD",
+                    "col_desc": "지연의 종류를 나타내는 코드"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "지연이 발생한 점소의 코드"
+                },
+                {
+                    "col": "DLY_RSCD",
+                    "col_desc": "지연 사유를 나타내는 코드"
+                },
+                {
+                    "col": "DTL_PRNCN_CNTN",
+                    "col_desc": "지연 사유에 대한 상세 내용"
+                },
+                {
+                    "col": "WORK_HMS",
+                    "col_desc": "지연 작업이 발생한 시간(시분초)"
+                },
+                {
+                    "col": "WORK_EMPNO",
+                    "col_desc": "지연 작업을 수행한 사원의 고유번호"
+                },
+                {
+                    "col": "REGS_DT",
+                    "col_desc": "데이터가 등록된 날짜"
+                },
+                {
+                    "col": "REGS_HMS",
+                    "col_desc": "데이터가 등록된 시간(시분초)"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터 ETL(Extract, Transform, Load) 작업이 수행된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCNWMP_PCHINOUT_R": {
+            "table_desc": "행낭 운송장 번호, 스캔 구분 코드, 목적지 코드, 행낭 종류 코드, 점소 코드, 작업자 ID, 스캔 일자 및 시간, 등록자 및 수정자 ID, 등록 및 수정 일시 등의 정보를 포함합니다.",
+            "cols": [
+                {
+                    "col": "PCH_WBL_NO",
+                    "col_desc": "행낭에 부착된 운송장 번호"
+                },
+                {
+                    "col": "SCAN_DCD",
+                    "col_desc": "스캔 유형을 구분하는 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "택배 운송장의 고유 번호"
+                },
+                {
+                    "col": "DEST_CD",
+                    "col_desc": "행낭의 목적지를 나타내는 코드"
+                },
+                {
+                    "col": "PCH_KDCD",
+                    "col_desc": "행낭의 종류를 구분하는 코드"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "점소(지점)를 나타내는 코드"
+                },
+                {
+                    "col": "WKR_ID",
+                    "col_desc": "작업을 수행한 작업자의 고유 ID"
+                },
+                {
+                    "col": "SCAN_DT",
+                    "col_desc": "스캔이 이루어진 날짜"
+                },
+                {
+                    "col": "SCAN_HMS",
+                    "col_desc": "스캔이 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 고유 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 수정한 사용자의 고유 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터 ETL(추출, 변환, 적재) 작업이 수행된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCNWSC_SCANRCV_P": {
+            "table_desc": "스캔 수신 내역에 대한 정보를 포함하며, 운송장번호, 스캔구분코드, 스캔일자, 스캔시분초, 점소코드, 작업자ID, 상대점소코드, 운송관리번호, 도급관리번호, 행낭운송장번호, 노선번호, 차량번호, 스캔사유코드, 상품코드, 도착구분코드, 잔류여부, 사용여부, 장비구분코드, 장비일련번호, 프로그램ID, 전송자코드, 전송일시, 등록점소코드, 등록자ID, 등록일시, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "운송장의 고유번호"
+                },
+                {
+                    "col": "SCAN_DCD",
+                    "col_desc": "스캔 유형을 구분하는 코드[BASIS_LCLSF_CD:'ST019'] (11:집화처리,12:미집화,13:집화출발,14:B2B직송,15:보조운송장등록,16:인수자,21:SM입고,22:SM인수,31:지선상차,32:지선하차,41:간선하차,42:간선하차,43:소분류,44:스캔확인,51:긴급지선출발,52:긴급지선도착,53:퀵벤출발,54:퀵벤도착,55:보관,56:사고,57:권내입고,58:권내출고,61:오도착,62:미발송,63:미출고,65:기타발송,82:배송출발,83:미배송입고,84:미배송,90:중계구분,91:배송완료,R1:콘솔IN,R2:콘솔OUT"
+                },
+                {
+                    "col": "SCAN_DT",
+                    "col_desc": "스캔이 이루어진 날짜"
+                },
+                {
+                    "col": "SCAN_HMS",
+                    "col_desc": "스캔이 이루어진 시간(시분초)"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "스캔이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "WKR_ID",
+                    "col_desc": "스캔을 수행한 작업자의 ID"
+                },
+                {
+                    "col": "PATN_BRAN_CD",
+                    "col_desc": "상대 점소의 코드"
+                },
+                {
+                    "col": "TRNSP_MNG_NO",
+                    "col_desc": "운송 관리를 위한 고유번호"
+                },
+                {
+                    "col": "SCNTR_MNG_NO",
+                    "col_desc": "도급 관리를 위한 고유번호"
+                },
+                {
+                    "col": "PCH_WBL_NO",
+                    "col_desc": "행낭에 부착된 운송장 번호"
+                },
+                {
+                    "col": "RTLN_NO",
+                    "col_desc": "운송 노선의 고유번호"
+                },
+                {
+                    "col": "VECL_NO",
+                    "col_desc": "운송에 사용된 차량의 번호"
+                },
+                {
+                    "col": "SCAN_RSCD",
+                    "col_desc": "스캔 사유를 나타내는 코드"
+                },
+                {
+                    "col": "GOODS_CD",
+                    "col_desc": "운송된 상품의 코드"
+                },
+                {
+                    "col": "ARV_DCD",
+                    "col_desc": "도착 유형을 구분하는 코드"
+                },
+                {
+                    "col": "RMN_YN",
+                    "col_desc": "잔류 여부를 나타내는 값(Y/N)"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "사용 여부를 나타내는 값(Y/N)"
+                },
+                {
+                    "col": "EQUP_DCD",
+                    "col_desc": "스캔에 사용된 장비 유형을 구분하는 코드"
+                },
+                {
+                    "col": "EQUP_SN",
+                    "col_desc": "스캔에 사용된 장비의 일련번호"
+                },
+                {
+                    "col": "PGM_ID",
+                    "col_desc": "스캔 데이터를 생성한 프로그램의 ID"
+                },
+                {
+                    "col": "TRANR_CD",
+                    "col_desc": "데이터를 전송한 주체의 코드"
+                },
+                {
+                    "col": "TNS_DTM",
+                    "col_desc": "데이터가 전송된 날짜와 시간"
+                },
+                {
+                    "col": "REGS_BRAN_CD",
+                    "col_desc": "데이터를 등록한 점소의 코드"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 프로세스가 수행된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCRVAP_CNFR_P": {
+            "table_desc": "예약 접수 및 확정 내역에 대한 정보를 포함하며, 예약번호, 고객코드, 접수일자, 예약구분코드, 운임금액, 집화/배송 정보 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "RSVT_NO",
+                    "col_desc": "예약의 고유번호"
+                },
+                {
+                    "col": "REP_RSVT_NO",
+                    "col_desc": "여러 예약을 묶어서 관리할 때 사용하는 대표 예약번호"
+                },
+                {
+                    "col": "CUST_CD",
+                    "col_desc": "예약을 한 고객의 고유 코드"
+                },
+                {
+                    "col": "CUST_MNG_PRNCTN_CD",
+                    "col_desc": "고객을 관리하는 거래처의 코드"
+                },
+                {
+                    "col": "SEND_CUST_CD",
+                    "col_desc": "발송하는 고객의 코드"
+                },
+                {
+                    "col": "CUST_ORD_NO",
+                    "col_desc": "고객이 주문한 주문번호"
+                },
+                {
+                    "col": "ACPT_DT",
+                    "col_desc": "예약이 접수된 날짜"
+                },
+                {
+                    "col": "ACPT_HMS",
+                    "col_desc": "예약이 접수된 시간(시분초)"
+                },
+                {
+                    "col": "ACPT_BRAN_CD",
+                    "col_desc": "예약이 접수된 점소의 코드"
+                },
+                {
+                    "col": "RSVT_DCD",
+                    "col_desc": "예약의 종류를 구분하는 코드[BASIS_LCLSF_CD:RV002] (01:일반,02:반품)"
+                },
+                {
+                    "col": "INSTR_DCD",
+                    "col_desc": "예약에 대한 지시 사항을 구분하는 코드"
+                },
+                {
+                    "col": "RSVT_MDA_CD",
+                    "col_desc": "예약이 이루어진 매체(전화, 인터넷 등)를 구분하는 코드"
+                },
+                {
+                    "col": "RSVT_SCD",
+                    "col_desc": "예약의 현재 상태를 나타내는 코드"
+                },
+                {
+                    "col": "PRT_SCD",
+                    "col_desc": "예약 관련 출력물의 상태를 나타내는 코드"
+                },
+                {
+                    "col": "CNF_PRGS_SCD",
+                    "col_desc": "예약 확정 진행 상황을 나타내는 코드"
+                },
+                {
+                    "col": "GTHDLV_TRCL_YN",
+                    "col_desc": "집화와 배송 간 이관 여부"
+                },
+                {
+                    "col": "FARE_DCD",
+                    "col_desc": "운임의 종류를 구분하는 코드[BASIS_LCLSF_CD:CS009] (01:선불,02:착불,03:신용,04:변경안함)"
+                },
+                {
+                    "col": "FARE_SUM_AMT",
+                    "col_desc": "운임의 총 금액"
+                },
+                {
+                    "col": "ADJPL_DCD",
+                    "col_desc": "운임 정산을 처리할 곳을 구분하는 코드"
+                },
+                {
+                    "col": "TDAY_COC_YN",
+                    "col_desc": "당일 집화 여부"
+                },
+                {
+                    "col": "TDAY_COC_PRGS_SCD",
+                    "col_desc": "당일 집화 진행 상황을 나타내는 코드"
+                },
+                {
+                    "col": "TDAY_COC_SM_CNFM_YN",
+                    "col_desc": "당일 집화에 대한 SM(현장관리자) 확인 여부"
+                },
+                {
+                    "col": "OGN_WBL_NO",
+                    "col_desc": "최초 발행된 운송장 번호"
+                },
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "현재 운송장의 번호"
+                },
+                {
+                    "col": "WBL_PRT_DT",
+                    "col_desc": "운송장이 출력된 날짜"
+                },
+                {
+                    "col": "WBL_RGDD",
+                    "col_desc": "운송장이 등록된 날짜"
+                },
+                {
+                    "col": "COC_PREARR_DT",
+                    "col_desc": "집화가 예정된 날짜"
+                },
+                {
+                    "col": "COC_DT",
+                    "col_desc": "실제 집화가 이루어진 날짜"
+                },
+                {
+                    "col": "COC_BRAN_CD",
+                    "col_desc": "집화가 이루어진 점소의 코드"
+                },
+                {
+                    "col": "COC_PROC_EMPNO",
+                    "col_desc": "집화를 처리한 사원의 번호"
+                },
+                {
+                    "col": "COC_YN",
+                    "col_desc": "집화가 이루어졌는지 여부"
+                },
+                {
+                    "col": "DLV_PREARR_DT",
+                    "col_desc": "배송이 예정된 날짜"
+                },
+                {
+                    "col": "DLV_DT",
+                    "col_desc": "실제 배송이 이루어진 날짜"
+                },
+                {
+                    "col": "DLV_BRAN_CD",
+                    "col_desc": "배송이 이루어진 점소의 코드"
+                },
+                {
+                    "col": "DLV_PROC_EMPNO",
+                    "col_desc": "배송을 처리한 사원의 번호"
+                },
+                {
+                    "col": "DLV_YN",
+                    "col_desc": "배송이 이루어졌는지 여부"
+                },
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "자료의 종류를 구분하는 코드"
+                },
+                {
+                    "col": "FILE_ACPT_PRGS_SCD",
+                    "col_desc": "파일 접수 진행 상황을 나타내는 코드"
+                },
+                {
+                    "col": "SHPM_INSTR_DT",
+                    "col_desc": "출하 지시가 내려진 날짜"
+                },
+                {
+                    "col": "RTRV_CNF_DT",
+                    "col_desc": "회수가 확정된 날짜"
+                },
+                {
+                    "col": "NCOC_RSCD",
+                    "col_desc": "집화가 이루어지지 않은 사유를 나타내는 코드"
+                },
+                {
+                    "col": "NCOCDT",
+                    "col_desc": "집화가 이루어지지 않은 날짜"
+                },
+                {
+                    "col": "NDLV_RSCD",
+                    "col_desc": "배송이 이루어지지 않은 사유를 나타내는 코드"
+                },
+                {
+                    "col": "NDLV_DT",
+                    "col_desc": "배송이 이루어지지 않은 날짜"
+                },
+                {
+                    "col": "NDFN_PRNCN_CNTN",
+                    "col_desc": "예약이 확정되지 않은 사유에 대한 내용"
+                },
+                {
+                    "col": "CNCL_KVAL",
+                    "col_desc": "예약 취소 시 사용되는 키값"
+                },
+                {
+                    "col": "CNCL_DCD",
+                    "col_desc": "예약 취소 사유를 구분하는 코드"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "해당 레코드가 사용 중인지 여부"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "레코드가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "레코드를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "레코드가 수정된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "레코드를 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL 작업이 수행된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAWD_TB_DCBSCD_BASISLC_M": {
+            "table_desc": "기초 대분류 코드에 대한 기본 정보를 포함하며, 기초대분류코드, 기초대분류코드명, 코드다운로드여부, 사용여부, 등록일시, 등록자ID, 수정일시, 수정자ID, ETL일시 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "BASIS_LCLSF_CD",
+                    "col_desc": "기초 대분류를 식별하는 고유 코드"
+                },
+                {
+                    "col": "BASIS_LCLSF_CD_NM",
+                    "col_desc": "기초 대분류 코드에 대한 설명"
+                },
+                {
+                    "col": "CD_DWLD_YN",
+                    "col_desc": "코드가 다운로드 가능한지 여부"
+                },
+                {
+                    "col": "USE_YN",
+                    "col_desc": "코드가 현재 사용 중인지 여부"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "코드가 등록된 날짜와 시간"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "코드를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "코드가 마지막으로 수정된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "코드를 마지막으로 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 날짜와 시간"
+                }
+            ]
+        }
+    },
+	{
+        "IAWD_TB_DCCUCR_CUST_M": {
+            "table_desc": "고객에 대한 기본 정보를 담고 있는 테이블로 고객코드,고객명,고객구분코드에 대한 정보를 담고 있다",
+            "cols": [
+                {
+                    "col": "CUST_CD",
+                    "col_desc": "고객코드"
+                },
+                {
+                    "col": "CUST_NM",
+                    "col_desc": "고객명"
+                },
+                {
+                    "col": "CUST_DCD",
+                    "col_desc": "고객구분코드"
+                },
+                {
+                    "col": "ZIP",
+                    "col_desc": "우편번호"
+                },
+                {
+                    "col": "BSC_ADDR1",
+                    "col_desc": "기본주소1"
+                },
+                {
+                    "col": "BSC_ADDR2",
+                    "col_desc": "기본주소2"
+                },
+                {
+                    "col": "BSC_ADDR3",
+                    "col_desc": "기본주소3"
+                },
+                {
+                    "col": "BSC_ADDR4",
+                    "col_desc": "기본주소4"
+                },
+                {
+                    "col": "BSC_ADDR5",
+                    "col_desc": "기본주소5"
+                },
+                {
+                    "col": "DTL_ADDR",
+                    "col_desc": "상세주소"
+                },
+                {
+                    "col": "LAREA_TEL_NO",
+                    "col_desc": "지역전화번호"
+                },
+                {
+                    "col": "TONO_TEL_NO",
+                    "col_desc": "국번전화번호"
+                },
+                {
+                    "col": "FS1_CLPHNO",
+                    "col_desc": "첫째휴대폰번호"
+                },
+                {
+                    "col": "SC2_CLPHNO",
+                    "col_desc": "둘째휴대폰번호"
+                },
+                {
+                    "col": "TH3_CLPHNO",
+                    "col_desc": "셋째휴대폰번호"
+                },
+                {
+                    "col": "REGS_BRAN_CD",
+                    "col_desc": "등록점소코드"
+                },
+                {
+                    "col": "RAGE_DCD",
+                    "col_desc": "권역구분코드"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "등록일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "등록자ID"
+                },
+                {
+                    "col": "DEL_YN",
+                    "col_desc": "삭제여부"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "코드가 마지막으로 수정된 날짜와 시간"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "코드를 마지막으로 수정한 사용자의 ID"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 ETL 처리된 날짜와 시간"
+                }
+            ]
+        }
+    },
+    {
+        "IAML_TB_BIDEALDIV_D": {
+            "table_desc": "BI거래구분에 대한 상세 코드 테이블로 고객분류상세,고객구분상세코드명,거래구분그룹명으로 이루어져있으며 IAMF_TB_COCBRANBYORGSALES_P 테이블의 DEAL_DTL_DCD 거래구분상세코드의 코드명을 보여주기 위해 해당 테이블을 사용한다.",
+            "cols": [
+                {
+                    "col": "CUST_CLSF_DTL_CD",
+                    "col_desc": "고객분류상세코드"
+                },
+                {
+                    "col": "CUST_CLSF_DTL_NM",
+                    "col_desc": "고객분류상세명"
+                },
+                {
+                    "col": "DEAL_DV_GRP_NM",
+                    "col_desc": "거래구분그룹명"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL일시"
+                }
+            ]
+        }
+    },{
+        "IAWD_TB_DCRVAP_LIST_P": {
+            "table_desc": "예약 접수 내역에 대한 정보를 포함하며, 고객 코드, 접수 일자, 파일 접수 순서 번호 등의 컬럼을 갖습니다.",
+            "cols": [
+                {
+                    "col": "CUST_CD",
+                    "col_desc": "고객의 고유 식별 코드"
+                },
+                {
+                    "col": "ACPT_DT",
+                    "col_desc": "서류 또는 물품 접수가 이루어진 날짜"
+                },
+                {
+                    "col": "FILE_ACPT_ODR_NO",
+                    "col_desc": "파일 접수가 이루어진 순서 번호"
+                },
+                {
+                    "col": "ACPT_ODR_NO",
+                    "col_desc": "접수된 순서 번호"
+                },
+                {
+                    "col": "RSVT_NO",
+                    "col_desc": "서비스 예약을 위한 고유 번호"
+                },
+                {
+                    "col": "REP_RSVT_NO",
+                    "col_desc": "여러 건의 예약 중 대표가 되는 예약의 번호"
+                },
+                {
+                    "col": "CUST_MNG_PRNCTN_CD",
+                    "col_desc": "고객 관리를 위한 거래처 코드"
+                },
+                {
+                    "col": "SEND_CUST_CD",
+                    "col_desc": "물품을 발송하는 고객의 코드"
+                },
+                {
+                    "col": "CUST_ORD_NO",
+                    "col_desc": "고객이 주문할 때 사용하는 주문 번호"
+                },
+                {
+                    "col": "ACPT_BRAN_CD",
+                    "col_desc": "접수가 이루어진 지점의 코드"
+                },
+                {
+                    "col": "RSVT_DCD",
+                    "col_desc": "예약의 종류를 구분하는 코드[BASIS_LCLSF_CD:RV002] (01:일반,02:반품)"
+                },
+                {
+                    "col": "OGN_WBL_NO",
+                    "col_desc": "원래의 운송장 번호"
+                },
+                {
+                    "col": "WBL_NO",
+                    "col_desc": "물품 운송 시 사용하는 운송장의 번호"
+                },
+                {
+                    "col": "SNDR_CUST_CD",
+                    "col_desc": "물품을 보내는 고객의 코드"
+                },
+                {
+                    "col": "SNDR_NM",
+                    "col_desc": "물품을 보내는 고객의 이름"
+                },
+                {
+                    "col": "SNDR_LAREA_TELNO",
+                    "col_desc": "송화인의 지역 전화번호"
+                },
+                {
+                    "col": "SNDR_TONO_TELNO",
+                    "col_desc": "송화인의 전화 국번"
+                },
+                {
+                    "col": "SNDR_INDV_TELNO",
+                    "col_desc": "송화인의 개별 전화번호"
+                },
+                {
+                    "col": "SNDR_FS1_CLPHNO",
+                    "col_desc": "송화인의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_SC2_CLPHNO",
+                    "col_desc": "송화인의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_TH3_CLPHNO",
+                    "col_desc": "송화인의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "SNDR_ZIP",
+                    "col_desc": "송화인의 우편번호"
+                },
+                {
+                    "col": "SNDR_ZIP_SN",
+                    "col_desc": "송화인의 우편번호 일련번호"
+                },
+                {
+                    "col": "SNDR_BSC_ADDR",
+                    "col_desc": "송화인의 기본 주소"
+                },
+                {
+                    "col": "SNDR_DTL_ADDR",
+                    "col_desc": "송화인의 상세 주소"
+                },
+                {
+                    "col": "RCVR_CUST_CD",
+                    "col_desc": "물품을 받는 고객의 코드"
+                },
+                {
+                    "col": "RCVR_NM",
+                    "col_desc": "물품을 받는 고객의 이름"
+                },
+                {
+                    "col": "RCVR_LAREA_TELNO",
+                    "col_desc": "수화인의 지역 전화번호"
+                },
+                {
+                    "col": "RCVR_TONO_TELNO",
+                    "col_desc": "수화인의 전화 국번"
+                },
+                {
+                    "col": "RCVR_INDV_TELNO",
+                    "col_desc": "수화인의 개별 전화번호"
+                },
+                {
+                    "col": "RCVR_FS1_CLPHNO",
+                    "col_desc": "수화인의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_SC2_CLPHNO",
+                    "col_desc": "수화인의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_TH3_CLPHNO",
+                    "col_desc": "수화인의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "RCVR_ZIP",
+                    "col_desc": "수화인의 우편번호"
+                },
+                {
+                    "col": "RCVR_ZIP_SN",
+                    "col_desc": "수화인의 우편번호 일련번호"
+                },
+                {
+                    "col": "RCVR_BSC_ADDR",
+                    "col_desc": "수화인의 기본 주소"
+                },
+                {
+                    "col": "RCVR_DTL_ADDR",
+                    "col_desc": "수화인의 상세 주소"
+                },
+                {
+                    "col": "ORDR_NM",
+                    "col_desc": "주문을 한 고객의 이름"
+                },
+                {
+                    "col": "ORDR_LTELNO",
+                    "col_desc": "주문자의 지역 전화번호"
+                },
+                {
+                    "col": "ORDR_OTELNO",
+                    "col_desc": "주문자의 전화 국번"
+                },
+                {
+                    "col": "ORDR_ITELNO",
+                    "col_desc": "주문자의 개별 전화번호"
+                },
+                {
+                    "col": "ORDR_FS1_CLPHNO",
+                    "col_desc": "주문자의 첫 번째 휴대폰 번호"
+                },
+                {
+                    "col": "ORDR_SC2_CLPHNO",
+                    "col_desc": "주문자의 두 번째 휴대폰 번호"
+                },
+                {
+                    "col": "ORDR_TH3_CLPHNO",
+                    "col_desc": "주문자의 세 번째 휴대폰 번호"
+                },
+                {
+                    "col": "ORDR_ZIP",
+                    "col_desc": "주문자의 우편번호"
+                },
+                {
+                    "col": "ORDR_BSC_ADDR",
+                    "col_desc": "주문자의 기본 주소"
+                },
+                {
+                    "col": "ORDR_DTL_ADDR",
+                    "col_desc": "주문자의 상세 주소"
+                },
+                {
+                    "col": "DLVS_GOODS_CD",
+                    "col_desc": "배송되는 상품의 코드"
+                },
+                {
+                    "col": "CNTR_ITML_CD",
+                    "col_desc": "계약된 품목의 코드"
+                },
+                {
+                    "col": "BOX_TYP_CD",
+                    "col_desc": "사용된 박스의 타입 코드[BASIS_LCLSF_CD:CS007](1:극소,2:소,3중,4:대1,5:이형,6:취급제한,7:대2)"
+                },
+                {
+                    "col": "FARE_RAGE_DCD",
+                    "col_desc": "운임이 적용되는 권역 구분 코드"
+                },
+                {
+                    "col": "QTY",
+                    "col_desc": "주문 또는 배송된 수량"
+                },
+                {
+                    "col": "BSC_FARE",
+                    "col_desc": "기본적으로 적용된 운임 금액"
+                },
+                {
+                    "col": "FERY_FARE",
+                    "col_desc": "도선에 적용된 운임 금액"
+                },
+                {
+                    "col": "INSTL_FARE",
+                    "col_desc": "제품 설치에 따른 추가 운임 금액"
+                },
+                {
+                    "col": "HNDLOW_FARE",
+                    "col_desc": "취급 시 발생하는 추가 운임 금액"
+                },
+                {
+                    "col": "JEJU_FARE",
+                    "col_desc": "제주 지역으로 배송 시 적용되는 추가 운임 금액"
+                },
+                {
+                    "col": "ITML_CD",
+                    "col_desc": "상품 또는 품목의 고유 코드"
+                },
+                {
+                    "col": "ITML_NM",
+                    "col_desc": "상품 또는 품목의 명칭"
+                },
+                {
+                    "col": "DTL_ITML_NM",
+                    "col_desc": "품목의 상세 명칭"
+                },
+                {
+                    "col": "CMDTS_AMT",
+                    "col_desc": "물품의 총 금액"
+                },
+                {
+                    "col": "PRT_CNT",
+                    "col_desc": "문서 또는 라벨 출력 건수"
+                },
+                {
+                    "col": "SEPR_PACKN_SENU",
+                    "col_desc": "분리 포장 시의 순번"
+                },
+                {
+                    "col": "SUMPKG_NO",
+                    "col_desc": "여러 품목을 함께 포장할 때 사용되는 번호"
+                },
+                {
+                    "col": "INNR_ITML_QTY",
+                    "col_desc": "하나의 포장 내에 포함된 품목의 수량"
+                },
+                {
+                    "col": "COC_PREARR_DT",
+                    "col_desc": "물품 집화가 예정된 날짜"
+                },
+                {
+                    "col": "COC_PREARR_TM",
+                    "col_desc": "물품 집화가 예정된 시간"
+                },
+                {
+                    "col": "COC_PREARR_BRAN_CD",
+                    "col_desc": "집화가 예정된 점소의 코드"
+                },
+                {
+                    "col": "COC_SM_EMPNO",
+                    "col_desc": "집화 작업을 담당하는 사원의 번호"
+                },
+                {
+                    "col": "DLV_PREARR_DT",
+                    "col_desc": "배송이 예정된 날짜"
+                },
+                {
+                    "col": "DLV_PREARR_TM",
+                    "col_desc": "배송이 예정된 시간"
+                },
+                {
+                    "col": "DLV_PREARR_BRAN_CD",
+                    "col_desc": "배송이 예정된 점소의 코드"
+                },
+                {
+                    "col": "DLV_SM_EMPNO",
+                    "col_desc": "배송을 담당하는 사원의 번호"
+                },
+                {
+                    "col": "DLV_TIME_DCD",
+                    "col_desc": "배송 시기를 구분하는 코드"
+                },
+                {
+                    "col": "HNGR_DLV_YN",
+                    "col_desc": "행거를 사용하여 배송하는지 여부"
+                },
+                {
+                    "col": "CUST_SMS_SEND_DV_VAL",
+                    "col_desc": "고객에게 SMS를 발송하는 경우의 구분값"
+                },
+                {
+                    "col": "PRE_NMBR_YN",
+                    "col_desc": "배송 전에 번호를 미리 지정하는지 여부"
+                },
+                {
+                    "col": "DAT_DCD",
+                    "col_desc": "자료를 구분하는 코드"
+                },
+                {
+                    "col": "FILE_ACPT_PRGS_SCD",
+                    "col_desc": "파일 접수의 진행 상태를 나타내는 코드"
+                },
+                {
+                    "col": "ERR_MSG_CNTN",
+                    "col_desc": "발생한 오류에 대한 메시지 내용"
+                },
+                {
+                    "col": "ERR_CD",
+                    "col_desc": "발생한 오류를 식별하는 코드"
+                },
+                {
+                    "col": "BOX_QTY_APLY_YN",
+                    "col_desc": "박스 수량이 적용되었는지 여부"
+                },
+                {
+                    "col": "FIX_RCVR_CD",
+                    "col_desc": "고정된 수화인의 코드"
+                },
+                {
+                    "col": "WHIN_TRNL_CD",
+                    "col_desc": "입고가 이루어진 터미널의 코드"
+                },
+                {
+                    "col": "REGS_DTM",
+                    "col_desc": "데이터가 시스템에 등록된 일시"
+                },
+                {
+                    "col": "REGR_ID",
+                    "col_desc": "데이터를 등록한 사용자의 ID"
+                },
+                {
+                    "col": "MOD_DTM",
+                    "col_desc": "데이터가 마지막으로 수정된 일시"
+                },
+                {
+                    "col": "MODR_ID",
+                    "col_desc": "데이터를 마지막으로 수정한 사용자의 ID"
+                },
+                {
+                    "col": "COC_BRAN_CRTR_CD",
+                    "col_desc": "집화를 담당하는 점소의 기준 코드"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "데이터가 추출, 변환, 로드(ETL) 처리된 일시"
+                }
+            ]
+        }
+    },{
+        "IAMD_TB_COSTCBRAN_M": {
+            "table_desc": "예코스트센터별점소_기본",
+            "cols": [
+                {
+                    "col": "COSTC_CD",
+                    "col_desc": "코스트센터코드"
+                },
+                {
+                    "col": "BRAN_CD",
+                    "col_desc": "각 점소별 코드"
+                },
+                {
+                    "col": "BRAN_NM",
+                    "col_desc": "점소명"
+                },
+                {
+                    "col": "HUB_TRNL_YN",
+                    "col_desc": "허브터미널여부 :값(Y/N)"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL일시"
+                }
+            ]
+        }
+    },{
+        "IAML_TB_BOXTYPE_M": {
+            "table_desc": "박스유형_기본 테이블로 택배박스의 크기와 유형을 담는 테이블",
+            "cols": [
+                {
+                    "col": "box_typ_cd",
+                    "col_desc": "박스타입코드"
+                },
+                {
+                    "col": "box_typ_nm",
+                    "col_desc": "박스타입명"
+                },
+                {
+                    "col": "ETL_DTM",
+                    "col_desc": "ETL일시"
+                }
+            ]
+        }
+    }, {
+        "IAML_TB_BOXTYPE_M": {
+            "table_desc": "핵심고객사익일미배송잔류KPI_현황",
+            "cols": [
+                {
+                "col": "WBL_NO",
+                "col_desc": "운송장번호"
+            },
+{
+                "col": "WBL_RGDD",
+                "col_desc": "운송장등록일자"
+            },
+{
+                "col": "BIZ_TEAM_CD",
+                "col_desc": "사업팀코드"
+            },
+{
+                "col": "BIZ_TEAM_NM",
+                "col_desc": "사업팀명"
+            },
+{
+                "col": "BRCH_CD",
+                "col_desc": "지사코드"
+            },
+{
+                "col": "BRCH_NM",
+                "col_desc": "지사명"
+            },
+{
+                "col": "TRNL_CD",
+                "col_desc": "터미널코드"
+            },
+{
+                "col": "TRNL_NM",
+                "col_desc": "터미널명"
+            },
+{
+                "col": "BRAN_CD",
+                "col_desc": "점소코드"
+            },
+{
+                "col": "BRAN_NM",
+                "col_desc": "점소명"
+            },
+{
+                "col": "RMN_TPCD",
+                "col_desc": "잔류유형코드"
+            },
+{
+                "col": "RMN_TYPE_NM",
+                "col_desc": "잔류유형명"
+            },
+{
+                "col": "RMN_BRAN_CD",
+                "col_desc": "잔류점소코드"
+            },
+{
+                "col": "RMN_BRAN_NM",
+                "col_desc": "잔류점소명"
+            },
+{
+                "col": "COC_EMPNO",
+                "col_desc": "집화사원번호"
+            },
+{
+                "col": "COC_EMPYNM",
+                "col_desc": "집화사원명"
+            },
+{
+                "col": "DLV_BIZ_TEAM_CD",
+                "col_desc": "배송사업팀코드"
+            },
+{
+                "col": "DLV_BIZ_TEAM_NM",
+                "col_desc": "배송사업팀명"
+            },
+{
+                "col": "DLV_BRCH_CD",
+                "col_desc": "배송지사코드"
+            },
+{
+                "col": "DLV_BRCH_NM",
+                "col_desc": "배송지사명"
+            },
+{
+                "col": "DLV_BRAN_CD",
+                "col_desc": "배송점소코드"
+            },
+{
+                "col": "DLV_BRAN_NM",
+                "col_desc": "배송점소명"
+            },
+{
+                "col": "DLV_EMPNO",
+                "col_desc": "배송사원번호"
+            },
+{
+                "col": "DLV_EMPYNM",
+                "col_desc": "배송사원명"
+            },
+{
+                "col": "FRST_RLY_BRAN_CD",
+                "col_desc": "최초중계점소코드"
+            },
+{
+                "col": "FRST_RLY_BRAN_NM",
+                "col_desc": "최초중계점소명"
+            },
+{
+                "col": "LAST_RLY_BRAN_CD",
+                "col_desc": "최종중계점소코드"
+            },
+{
+                "col": "LAST_RLY_BRAN_NM",
+                "col_desc": "최종중계점소명"
+            },
+{
+                "col": "LAST_ST_SCAN_DT",
+                "col_desc": "최종상태스캔일자"
+            },
+{
+                "col": "LAST_SCD",
+                "col_desc": "최종상태코드"
+            },
+{
+                "col": "LAST_ST_NM",
+                "col_desc": "최종상태명"
+            },
+{
+                "col": "LAST_BRAN_CD",
+                "col_desc": "최종점소코드"
+            },
+{
+                "col": "LAST_BRAN_NM",
+                "col_desc": "최종점소명"
+            },
+{
+                "col": "SPITD_CUST_CD",
+                "col_desc": "주관고객코드"
+            },
+{
+                "col": "SPITD_CUST_NM",
+                "col_desc": "주관고객명"
+            },
+{
+                "col": "SEND_CUST_CD",
+                "col_desc": "발송고객코드"
+            },
+{
+                "col": "SEND_CUST_NM",
+                "col_desc": "발송고객명"
+            },
+{
+                "col": "DLV_DAYS",
+                "col_desc": "배송일수"
+            },
+{
+                "col": "REQD_DAYS",
+                "col_desc": "소요일수"
+            },
+{
+                "col": "HODY_INCD_REQD_DAYS",
+                "col_desc": "휴일포함소요일수"
+            },
+{
+                "col": "CONSL_IN_SCAN_YN",
+                "col_desc": "콘솔이내스캔여부"
+            },
+{
+                "col": "WRNARV_SCAN_DT",
+                "col_desc": "오도착스캔일자"
+            },
+{
+                "col": "WRNARV_SCAN_TM",
+                "col_desc": "오도착스캔시간"
+            },
+{
+                "col": "WRNARV_YN",
+                "col_desc": "오도착여부"
+            },
+{
+                "col": "NDLV_RSCD",
+                "col_desc": "미배송사유코드"
+            },
+{
+                "col": "NDLV_PRNCN_NM",
+                "col_desc": "미배송사유명"
+            },
+{
+                "col": "RSVT_DCD",
+                "col_desc": "예약구분코드"
+            },
+{
+                "col": "RSVT_DV_NM",
+                "col_desc": "예약구분명"
+            },
+{
+                "col": "RSVT_SIGNGU_NM",
+                "col_desc": "수화인시군구명"
+            },
+{
+                "col": "RCVR_ZIP",
+                "col_desc": "수화인우편번호"
+            },
+{
+                "col": "DLPREA_TOP_MNG_BRAN_CD",
+                "col_desc": "배송예정 상위상위 관리점소코드"
+            },
+{
+                "col": "DLPREA_TOP_MNG_BRAN_NM",
+                "col_desc": "배송예정 상위상위 관리점소명"
+            },
+{
+                "col": "DLPREA_UP_MNG_BRAN_CD",
+                "col_desc": "배송예정 상위 관리점소코드"
+            },
+{
+                "col": "DLPREA_UP_MNG_BRAN_NM",
+                "col_desc": "배송예정 상위 관리점소명"
+            },
+{
+                "col": "DLPREA_OP_UP_BRAN_CD",
+                "col_desc": "배송예정 운영상위점소코드"
+            },
+{
+                "col": "DLPREA_OP_UP_BRAN_NM",
+                "col_desc": "배송예정 운영상위점소명"
+            },
+{
+                "col": "DLV_PREARR_BRAN_CD",
+                "col_desc": "배송예정점소코드"
+            },
+{
+                "col": "DLV_PREARR_BRAN_NM",
+                "col_desc": "배송예정점소명"
+            },
+{
+                "col": "DLPREA_SM_EMPNO",
+                "col_desc": "배송예정SM사원번호"
+            },
+{
+                "col": "DLPREA_SM_EMPYNM",
+                "col_desc": "배송예정SM사원번호명"
+            },
+{
+                "col": "DLCMT_BRAN_CD",
+                "col_desc": "배송완료점소코드"
+            },
+{
+                "col": "DLCMT_BRAN_NM",
+                "col_desc": "배송완료점소명"
+            },
+{
+                "col": "DLV_CMPLT_SCAN_DT",
+                "col_desc": "배송완료스캔일자"
+            },
+{
+                "col": "DLV_CMPLT_SCAN_TM",
+                "col_desc": "배송완료스캔시간"
+            },
+{
+                "col": "DLCMT_SCAN_REGS_DTM",
+                "col_desc": "배송완료스캔등록일시"
+            },
+{
+                "col": "FRST_ATLD_SCAN_BRAN_CD",
+                "col_desc": "최초간선상차스캔점소코드"
+            },
+{
+                "col": "FRST_ATLD_SCAN_BRAN_NM",
+                "col_desc": "최초간선상차스캔점소명"
+            },
+{
+                "col": "FRST_ATLD_PATN_SCAN_BRAN_CD",
+                "col_desc": "최초간선상차상대스캔점소코드"
+            },
+{
+                "col": "FRST_ATLD_PATN_SCAN_BRAN_NM",
+                "col_desc": "최초간선상차상대스캔점소명"
+            },
+{
+                "col": "FRST_ATLD_SCAN_DT",
+                "col_desc": "최초간선상차스캔일자"
+            },
+{
+                "col": "FRST_ATLD_SCAN_TM",
+                "col_desc": "최초간선상차스캔시간"
+            },
+{
+                "col": "FRST_ATLD_SCAN_REGS_DTM",
+                "col_desc": "최초간선상차스캔등록일시"
+            },
+{
+                "col": "LAST_ATLD_SCAN_BRAN_CD",
+                "col_desc": "최종간선상차스캔점소코드"
+            },
+{
+                "col": "LAST_ATLD_SCAN_BRAN_NM",
+                "col_desc": "최종간선상차스캔점소명"
+            },
+{
+                "col": "LAST_ATLD_PATN_SCAN_BRAN_CD",
+                "col_desc": "최종간선상차상대스캔점소코드"
+            },
+{
+                "col": "LAST_ATLD_PATN_SCAN_BRAN_NM",
+                "col_desc": "최종간선상차상대스캔점소명"
+            },
+{
+                "col": "LAST_ATLD_SCAN_DT",
+                "col_desc": "최종간선상차스캔일자"
+            },
+{
+                "col": "LAST_ATLD_SCAN_TM",
+                "col_desc": "최종간선상차스캔시간"
+            },
+{
+                "col": "LAST_ATLD_SCAN_REGS_DTM",
+                "col_desc": "최종간선상차스캔등록일시"
+            },
+{
+                "col": "LAST_ATUNLD_SCAN_BRAN_CD",
+                "col_desc": "최종간선하차스캔점소코드"
+            },
+{
+                "col": "LAST_ATUNLD_SCAN_BRAN_NM",
+                "col_desc": "최종간선하차스캔점소명"
+            },
+{
+                "col": "LAST_ATUNLD_PATN_SCAN_BRAN_CD",
+                "col_desc": "최종간선하차상대스캔점소코드"
+            },
+{
+                "col": "LAST_ATUNLD_PATN_SCAN_BRAN_NM",
+                "col_desc": "최종간선하차상대스캔점소명"
+            },
+{
+                "col": "LAST_ATUNLD_SCAN_DT",
+                "col_desc": "최종간선하차스캔일자"
+            },
+{
+                "col": "LAST_ATUNLD_SCAN_TM",
+                "col_desc": "최종간선하차스캔시간"
+            },
+{
+                "col": "LAST_ATUNLD_SCAN_REGS_DTM",
+                "col_desc": "최종간선하차스캔등록일시"
+            },
+{
+                "col": "LAST_ATUNLD_SCAN_YN",
+                "col_desc": "최종간선하차스캔여부"
+            },
+{
+                "col": "LAST_ATUNLD_WHLSRT_SCAN_BRAN_CD",
+                "col_desc": "최종간선하차스캔휠소터점소코드"
+            },
+{
+                "col": "LAST_ATUNLD_WHLSRT_SCAN_BRAN_NM",
+                "col_desc": "최종간선하차스캔휠소터점소명"
+            },
+{
+                "col": "LAST_ATUNLD_PATN_WHLSRT_SCAN_BRAN_CD",
+                "col_desc": "최종간선하차상대스캔휠소터점소코드"
+            },
+{
+                "col": "LAST_ATUNLD_PATN_WHLSRT_SCAN_BRAN_NM",
+                "col_desc": "최종간선하차상대스캔휠소터점소명"
+            },
+{
+                "col": "LAST_ATUNLD_WHLSRT_SCAN_DT",
+                "col_desc": "최종간선하차스캔휠소터일자"
+            },
+{
+                "col": "LAST_ATUNLD_WHLSRT_SCAN_TM",
+                "col_desc": "최종간선하차스캔휠소터시간"
+            },
+{
+                "col": "LAST_ATUNLD_WHLSRT_SCAN_REGS_DTM",
+                "col_desc": "최종간선하차스캔휠소터등록일시"
+            },
+{
+                "col": "LAST_ATUNLD_WHLSRT_SCAN_YN",
+                "col_desc": "배송기준일내최종간선하차휠소터스캔여부"
+            },
+{
+                "col": "SM_TKOVR_SCAN_BRAN_CD",
+                "col_desc": "SM인수스캔점소코드"
+            },
+{
+                "col": "SM_TKOVR_SCAN_DT",
+                "col_desc": "SM인수스캔일자"
+            },
+{
+                "col": "SM_TKOVR_SCAN_TM",
+                "col_desc": "SM인수스캔시간"
+            },
+{
+                "col": "SM_TKOVR_SCAN_REGS_DTM",
+                "col_desc": "SM인수스캔등록일시"
+            },
+{
+                "col": "SM_TKOVR_SCAN_YN",
+                "col_desc": "SM인수스캔여부"
+            },
+{
+                "col": "DLDPT_SCAN_BRAN_CD",
+                "col_desc": "배송출발스캔점소코드"
+            },
+{
+                "col": "DLDPT_SCAN_BRAN_NM",
+                "col_desc": "배송출발스캔점소명"
+            },
+{
+                "col": "DLV_DPTR_SCAN_DT",
+                "col_desc": "배송출발스캔일자"
+            },
+{
+                "col": "DLV_DPTR_SCAN_TM",
+                "col_desc": "배송출발스캔시간"
+            },
+{
+                "col": "DLDPT_SCAN_REGS_DTM",
+                "col_desc": "배송출발스캔등록일시"
+            },
+{
+                "col": "DLDPT_SCAN_YN",
+                "col_desc": "배송출발스캔여부"
+            },
+{
+                "col": "NDLV_SCAN_DT",
+                "col_desc": "미배송스캔일자"
+            },
+{
+                "col": "NDLV_SCAN_YN",
+                "col_desc": "미배송스캔여부"
+            },
+{
+                "col": "DLV_GOAL_DT",
+                "col_desc": "배송목표일자"
+            },
+{
+                "col": "NXDY_HUB_SCAN_YN",
+                "col_desc": "익일하차HUB스캔여부"
+            },
+{
+                "col": "NXDY_HUB_SCAN_DT",
+                "col_desc": "익일하차HUB스캔일자"
+            },
+{
+                "col": "NXDY_HUB_SCAN_TM",
+                "col_desc": "익일하차HUB스캔시간"
+            },
+{
+                "col": "INSERT_CNT",
+                "col_desc": "INSERT건수"
+            },
+{
+                "col": "ETl_DTM",
+                "col_desc": "ETL일시"
+            }
+            ]
+        }
+    }
+]
